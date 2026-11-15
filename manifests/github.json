@@ -1,0 +1,62 @@
+{
+  "owner": "leetranwyng",
+  "repository": {
+    "full_name": "leetranwyng/sc203-kat",
+    "html_url": "https://github.com/leetranwyng/sc203-kat",
+    "clone_url": "https://github.com/leetranwyng/sc203-kat.git",
+    "private": true,
+    "default_branch": "main"
+  },
+  "forks": [
+    {
+      "name": "apc_vlm",
+      "upstream": "KAIST-Visual-AI-Group/APC-VLM",
+      "full_name": "leetranwyng/APC-VLM",
+      "html_url": "https://github.com/leetranwyng/APC-VLM",
+      "clone_url": "https://github.com/leetranwyng/APC-VLM.git",
+      "pinned_commit": "d7ca0517b96afbce22ddb7332a8b6361071e0bcf",
+      "fork": true,
+      "parent": "KAIST-Visual-AI-Group/APC-VLM"
+    },
+    {
+      "name": "pcd",
+      "upstream": "hjchung1/PCD",
+      "full_name": "leetranwyng/PCD",
+      "html_url": "https://github.com/leetranwyng/PCD",
+      "clone_url": "https://github.com/leetranwyng/PCD.git",
+      "pinned_commit": "8ba5297d266b83d3306cf2df4c343ae90413e953",
+      "fork": true,
+      "parent": "hjchung1/PCD"
+    },
+    {
+      "name": "sympl",
+      "upstream": "AIRLABkhu/SymPL",
+      "full_name": "leetranwyng/SymPL",
+      "html_url": "https://github.com/leetranwyng/SymPL",
+      "clone_url": "https://github.com/leetranwyng/SymPL.git",
+      "pinned_commit": "384c75d0219dfaaf33280e01ebe5f0d2e19eeed3",
+      "fork": true,
+      "parent": "AIRLABkhu/SymPL"
+    },
+    {
+      "name": "vst",
+      "upstream": "Yangr116/VST",
+      "full_name": "leetranwyng/VST",
+      "html_url": "https://github.com/leetranwyng/VST",
+      "clone_url": "https://github.com/leetranwyng/VST.git",
+      "pinned_commit": "e373b3d498d8d5e4b0160ad40542fed98079f683",
+      "fork": true,
+      "parent": "Yangr116/VST"
+    },
+    {
+      "name": "spatial_ssrl",
+      "upstream": "InternLM/Spatial-SSRL",
+      "full_name": "leetranwyng/Spatial-SSRL",
+      "html_url": "https://github.com/leetranwyng/Spatial-SSRL",
+      "clone_url": "https://github.com/leetranwyng/Spatial-SSRL.git",
+      "pinned_commit": "5b27b7b314e65dadccca6e065b8a4dc039534021",
+      "fork": true,
+      "parent": "InternLM/Spatial-SSRL"
+    }
+  ]
+}

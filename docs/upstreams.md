@@ -2,15 +2,15 @@
 
 This local repository contains five independent, shallow source checkouts registered as Git submodules. They were copied through Git from the existing local clones, so they do not depend on the old repositories' object stores. No weights, caches or untracked result archives were copied.
 
-`manifests/upstreams.json` records the checked-out commit, official URL and any local tracked edits. The current submodule URLs point to official upstream repositories. A local Git checkout is not a GitHub fork: no remote GitHub repositories were created by this migration.
+`manifests/upstreams.json` records the checked-out commit, official URL and any local tracked edits. The submodule URLs point to verified GitHub forks under `leetranwyng`. Each fork retains its official paper repository as its GitHub parent, and each local submodule has an `upstream` remote pointing to that parent. The main repository is https://github.com/leetranwyng/sc203-kat (private).
 
-## Creating the team forks later
+## Working with the forks
 
-1. Create one GitHub fork per upstream under the team's account or organization.
-2. Keep that fork's `upstream` remote pointing at the original project.
-3. Change the corresponding `.gitmodules` URL to the team fork URL, run `git submodule sync`, and update `remote_fork_url` in the manifest.
-4. Commit paper-source modifications in the appropriate fork, then commit its new submodule pointer in the parent repository.
-5. Keep scientific runs pinned to exact commits. Do not use an automatically moving branch for Kaggle runs.
+1. Work on a new branch in the relevant submodule when changing paper-source code.
+2. Commit and push that branch to its `origin` (`leetranwyng` fork).
+3. Commit the updated submodule pointer in the main repo. The referenced commit must be available remotely before sharing it.
+4. Fetch author updates from `upstream` explicitly; do not move baseline pins automatically.
+5. Runtime profiles contain migration overlays, so changing a submodule alone may not change the effective inference source. Update the profile and record its hash as well.
 
 ## Runtime snapshots versus Git commits
 

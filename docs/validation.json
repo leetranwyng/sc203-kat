@@ -10,5 +10,7 @@
     "status": "passed"
   },
   "gpu_inference_after_refactor": "not_run",
-  "remote_github_created": false
+  "remote_github_created": true,
+  "github_owner": "leetranwyng",
+  "github_repository": "leetranwyng/sc203-kat"
 }

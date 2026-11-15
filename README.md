@@ -27,7 +27,7 @@ python scripts/package_kaggle.py --method apc_vis --output dist/sc203-kat-apc-vi
 4. Có thể thêm Secret `HF_token` hoặc đổi `HF_SECRET_NAME` trong cell cấu hình. Token chỉ được truyền qua môi trường, không lưu vào config/kết quả.
 5. Chạy sanity trước, sau đó dùng `full.ipynb`. Cả hai dùng cùng source profile. Bản refactor đã kiểm tra CPU; cần xác nhận sanity GPU sau khi di chuyển code.
 
-Sau khi có remote GitHub, notebook cũng hỗ trợ `REPO_URL` và `CODE_REF` (release/commit cụ thể). Không dùng code trôi theo `main` cho kết quả cần tái lập.
+Notebook cũng hỗ trợ `REPO_URL` và `CODE_REF` (release/commit cụ thể). Không dùng code trôi theo `main` cho kết quả cần tái lập. Repo chính hiện private: trên Kaggle nên dùng gói code Input; chế độ clone cần đăng nhập GitHub có quyền đọc repo.
 
 ## Cấu trúc
 
@@ -56,4 +56,4 @@ CLI in ra đường dẫn prediction chuẩn hóa để dùng cho `evaluate` và
 
 ## Git và nguồn gốc
 
-Repo Git local đã được khởi tạo; chưa có remote GitHub hoặc fork trên tài khoản nhóm. Năm submodule hiện trỏ repo chính thức, khóa commit. Xem [quản lý upstream/fork](docs/upstreams.md) và [lộ trình refactor](docs/migration.md). Giữ nguyên license/attribution trong source tác giả; xem `THIRD_PARTY_NOTICES.md`.
+Repo chính: [leetranwyng/sc203-kat](https://github.com/leetranwyng/sc203-kat) (private). Năm submodule trỏ các fork của `leetranwyng`, khóa commit; remote `upstream` của từng submodule giữ nguồn tác giả. Xem [quản lý upstream/fork](docs/upstreams.md) và [lộ trình refactor](docs/migration.md). Giữ nguyên license/attribution trong source tác giả; xem `THIRD_PARTY_NOTICES.md`.

@@ -22,4 +22,4 @@ Repo tác giả và snapshot runtime có thể khác nhau. `manifests/upstreams.
 4. Thêm biến thể `apc_vis_3d` để thử reconstruction + oriented 3D boxes; giữ baseline nguyên danh tính.
 5. Dùng split theo image/question group để các option permutation và ảnh flip không lọt sang tập kiểm tra hypothesis.
 
-Chưa tạo remote hoặc thực hiện GitHub fork trong lần tạo repo local. Các thao tác đó cần tài khoản GitHub đích; không suy diễn tên nhóm từ username Kaggle.
+Đã tạo remote `leetranwyng/sc203-kat` (private) và 5 fork dưới tài khoản `leetranwyng`. Các submodule trỏ fork tương ứng và giữ remote upstream của tác giả.
