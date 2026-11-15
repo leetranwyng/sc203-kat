@@ -1,0 +1,11 @@
+{
+  "method": "sympl",
+  "mode": "full",
+  "run_name": "sympl_full",
+  "model_input": null,
+  "dataset_input": null,
+  "resume_input": null,
+  "output_dir": "/kaggle/working/sc203-kat/sympl_full",
+  "runtime_dir": "/kaggle/temp/sc203-kat-runtime/sympl",
+  "method_options": {}
+}

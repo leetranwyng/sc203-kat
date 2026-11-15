@@ -1,0 +1,1750 @@
+[
+  {
+    "sample_id": "5832",
+    "paper_task": "left_right",
+    "image_sha256": "d20e1c9e90d14757d09588b120f07ae535c59c9d7f578da87e41f11f17ccdebe",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 167,
+    "selection_utility": 167,
+    "viewer_text": "picture on the wall",
+    "selection_reasons": [
+      "all_five_wrong",
+      "all_available_others_wrong",
+      "viewer_repaired_by_question_subject",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5700",
+    "paper_task": "left_right",
+    "image_sha256": "5c4b3b0e31367a00ce24bebd8cc9fcdf5f8ff1c75e6ebdc2de9849af53de4b67",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 137,
+    "selection_utility": 131,
+    "viewer_text": "air conditioner",
+    "selection_reasons": [
+      "all_five_wrong",
+      "all_available_others_wrong",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5778",
+    "paper_task": "left_right",
+    "image_sha256": "8ff45735566a9ea9f6d6176ae85253eeb660ee92276bda9374f7864d78087f8f",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 137,
+    "selection_utility": 125,
+    "viewer_text": "person",
+    "selection_reasons": [
+      "all_five_wrong",
+      "all_available_others_wrong",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5820",
+    "paper_task": "left_right",
+    "image_sha256": "6b20dd746a196ae7cdc072e515554b71b3432cf048909637d74df38bebdcb29b",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 85,
+    "selection_utility": 83,
+    "viewer_text": "man in dark green shirt",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "viewer_repaired_by_question_subject",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5569",
+    "paper_task": "left_right",
+    "image_sha256": "8c20dd7f8513d11023465071352c24c0b5fbc59b1aea3e10e93e970a4f7287dd",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 67,
+    "selection_utility": 57,
+    "viewer_text": "bus",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5657",
+    "paper_task": "left_right",
+    "image_sha256": "680fc9dac7cd5ce8a68d201d495205e31e2ddc54885fd077febb8e3e22bd27f7",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 67,
+    "selection_utility": 51,
+    "viewer_text": "man",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5983",
+    "paper_task": "left_right",
+    "image_sha256": "7c3456149223089e6522396f4f9bc87450b459c547815e7fd339c6e7bfed0030",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 67,
+    "selection_utility": 45,
+    "viewer_text": "black computer mouse",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5514",
+    "paper_task": "left_right",
+    "image_sha256": "f2f85ebe69146b5c124ed4a015cbb91f0a0e611739004493c9e70ecd6d0c6574",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 39,
+    "viewer_text": "red tram",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5559",
+    "paper_task": "left_right",
+    "image_sha256": "5825a579094c036fb7cf1e7bc1ae3af502ef56e6a789a8fc7eede54bf28bab71",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 35,
+    "viewer_text": "cat",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5613",
+    "paper_task": "left_right",
+    "image_sha256": "9092a1dae3078332455fd47d19aef07ccfcfba9a6238f21851bc13ea1976776b",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 31,
+    "viewer_text": "elephant",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5730",
+    "paper_task": "left_right",
+    "image_sha256": "0966de39d43566a2d360beb9d2ba710c8528aaba0e8fbacecebf750a78dee89e",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 27,
+    "viewer_text": "silver car at the crossroads",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5865",
+    "paper_task": "left_right",
+    "image_sha256": "3ddf1652798186be2540abeb727635326ec433095e7f2490e1335ce160c4932b",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 23,
+    "viewer_text": "teddy bear",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5877",
+    "paper_task": "left_right",
+    "image_sha256": "2f721b9e43c11f1940496134e19becb7a3641c18fb190c9544fe83b664ac10e9",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 19,
+    "viewer_text": "giraffe",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5919",
+    "paper_task": "left_right",
+    "image_sha256": "f8543b689a767f78da5b3bfc0c60edb76f51d5668f6514a67706cae9e1886996",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 15,
+    "viewer_text": "red motorcycle",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5985",
+    "paper_task": "left_right",
+    "image_sha256": "6a5eb8c75d4bf97aac5fc86b5041275c21be6d5555adf901fc2d62a5ba16dfb2",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 11,
+    "viewer_text": "red car",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5570",
+    "paper_task": "left_right",
+    "image_sha256": "4d97dc620c5918b83500b82a4787d7475d5a005a2dd7b3c4d16c8bfe699da0f3",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 67,
+    "selection_utility": 1,
+    "viewer_text": "bus",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5651",
+    "paper_task": "left_right",
+    "image_sha256": "2e75500e8caae660995183ca3baf1d957c193d85508af6e03b20ae52ba659890",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": -3,
+    "viewer_text": "man",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5823",
+    "paper_task": "left_right",
+    "image_sha256": "40f759945a6a245c909bae824183a867aae7fb897f6916a654c20ed81423ab91",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": -7,
+    "viewer_text": "man in dark green shirt",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5532",
+    "paper_task": "left_right",
+    "image_sha256": "3288d3b721fb16a362eec34c9a152d95b320ba3ffaccbc4ba608569dd20f53d1",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -10,
+    "viewer_text": "man in white shirt",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5542",
+    "paper_task": "left_right",
+    "image_sha256": "de1cb3d6a5e306e4b1d5a06402e7dc229742a0444541badd0417b963a22d95b4",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -12,
+    "viewer_text": "fridge",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5562",
+    "paper_task": "left_right",
+    "image_sha256": "f74edeb5998f8ac63fc2be377173f459bdfb0e93ad3c36e2d93676e22145054b",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -14,
+    "viewer_text": "trash can",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5584",
+    "paper_task": "left_right",
+    "image_sha256": "05e4dcf0a0a9ede0625600372408d6f5489b0e53a5e12f7aad95e2d4d5f39277",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -16,
+    "viewer_text": "clock",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5616",
+    "paper_task": "left_right",
+    "image_sha256": "b03ffcc712c9ddb219ccb080456666b3f7c74009d665463492e31761941c875a",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -18,
+    "viewer_text": "white car",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5662",
+    "paper_task": "left_right",
+    "image_sha256": "3ec13ac7ce3dd434b2459b6fbb7f87842638949357b6808b36fcac5ef0f673f9",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -20,
+    "viewer_text": "pickup truck",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5664",
+    "paper_task": "left_right",
+    "image_sha256": "d25e23d0d54469cfe117dca84b16d711bacc93c5d2a9115c83dd66d5244a68fd",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -22,
+    "viewer_text": "man that is holding a camera",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5736",
+    "paper_task": "left_right",
+    "image_sha256": "a4ad6486b7b1afab2935603d3f1bf09923cc936ce793375d0ab914cad28f26e3",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -24,
+    "viewer_text": "faucet",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5744",
+    "paper_task": "left_right",
+    "image_sha256": "81ea557b2f36ea6cfe07328be465882818693a097d3f1ce9123c8cc4bb3b2f96",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -26,
+    "viewer_text": "mouse",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5784",
+    "paper_task": "left_right",
+    "image_sha256": "aec2b1dc5e7eb5f97c292eb45c57f88cd06c53ff8819eca7730f07c62b8ac134",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -28,
+    "viewer_text": "train",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5486",
+    "paper_task": "left_right",
+    "image_sha256": "08ccc909f847972e83b191c00f461e1e5040da9696da47267cb861efbec023d3",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 41,
+    "viewer_text": "woman in purple cloth",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "5760",
+    "paper_task": "left_right",
+    "image_sha256": "9a1e6136d4d16270a0751ddb1dcecbdc58622c89378faec21f28c24f33a9c846",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 37,
+    "viewer_text": "stop sign",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "5592",
+    "paper_task": "left_right",
+    "image_sha256": "aff4b9cdb7dad04d3bf0b46316aee14695c733911d3b47a69cfb2859f9b3089c",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 52,
+    "selection_utility": 28,
+    "viewer_text": "truck",
+    "selection_reasons": [
+      "all_available_others_wrong",
+      "APC_correct_other_model_wrong",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5488",
+    "paper_task": "left_right",
+    "image_sha256": "1c8ad0a156aed1c2d9a3ae1703f925f8abffefdb90dae39b1a88a266b46163ab",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 25,
+    "viewer_text": "woman in purple cloth",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "5762",
+    "paper_task": "left_right",
+    "image_sha256": "2f10078a0fbba1f1f79011302ab1b33d805e7f0b9c2fe12ab12a482129c402cf",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 21,
+    "viewer_text": "stop sign",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "5796",
+    "paper_task": "left_right",
+    "image_sha256": "44023dd96405e0ab529571f682abdd6817c0ed5447f1e519db5f88658d7b4f10",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 52,
+    "selection_utility": 18,
+    "viewer_text": "white and grey bus",
+    "selection_reasons": [
+      "all_available_others_wrong",
+      "APC_correct_other_model_wrong",
+      "PCD_alternative_branch_correct"
+    ]
+  },
+  {
+    "sample_id": "5835",
+    "paper_task": "left_right",
+    "image_sha256": "17a5a33c6c6924d372989c154823687129d84ec6f14826e37fc5f65c664d8431",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 15,
+    "viewer_text": "picture on the wall",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "5498",
+    "paper_task": "left_right",
+    "image_sha256": "0d2b6ed0085eebecf0c46535266dc04a7811a1657bbbc24ee85ea04c45196f87",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 1,
+    "viewer_text": "boy with long sleeve blue shirt",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "5496",
+    "paper_task": "left_right",
+    "image_sha256": "a86b4ccd56e7b6ed35162d94bb75dbbfb6e08fd5f0ada68b5d49510ab4ae7259",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "grey dog",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "5576",
+    "paper_task": "left_right",
+    "image_sha256": "f9619642fe802225e3c6358d499c78900671f471b1236858c7d934277914b287",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "dog",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "5644",
+    "paper_task": "left_right",
+    "image_sha256": "eee6acbbd322f28a1871f0f1594df1f59e766f807bd58c8f44a4fe221efd2ea6",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "toilet",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "5668",
+    "paper_task": "left_right",
+    "image_sha256": "bbc5e599c993e5aa8d47f0294607cf2b5fa7bf14b2dbb8914ec4ca52515f9bb9",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "cow",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "4854",
+    "paper_task": "visibility",
+    "image_sha256": "9de573824a2cceed98b6f4bb30a66c8525614c65f107808dc06f80d27ee7c3c7",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 55,
+    "viewer_text": "couch on the left",
+    "selection_reasons": [
+      "all_available_others_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "4866",
+    "paper_task": "visibility",
+    "image_sha256": "ea574f6018d19f3e321aab34e2028057e78c795ff522fba0e9ec55963f1c7358",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 55,
+    "viewer_text": "red train",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "4882",
+    "paper_task": "visibility",
+    "image_sha256": "1fda1f562377e4f182c767797d3ccd22da67cedaa2b30d013da3b1a05a29831c",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 51,
+    "viewer_text": "blue board",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "4930",
+    "paper_task": "visibility",
+    "image_sha256": "b45750050a89a18ed49b2814113a73b7b78374e5819c167b6531441c3cad3ac0",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 51,
+    "viewer_text": "women wearing a red helmet",
+    "selection_reasons": [
+      "all_available_others_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "4892",
+    "paper_task": "visibility",
+    "image_sha256": "dace9d8f447ae5a591d0bdf823f621e7b1f45dc052cd12a207a78972ec6f00a1",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 47,
+    "viewer_text": "lime green car",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "5186",
+    "paper_task": "visibility",
+    "image_sha256": "9fac20c969b51dcfc00d5eacc973d34e46bcd40c91e739dc5241dad3bd366622",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 43,
+    "viewer_text": "man in red shirt",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "4878",
+    "paper_task": "visibility",
+    "image_sha256": "41ad1e84b1b9a9b45dbca54b34abea8d1cfa592af9bac568394cb09da51a866f",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 21,
+    "viewer_text": "bicycle",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4954",
+    "paper_task": "visibility",
+    "image_sha256": "288c8e2574aa271876bb21c4994e5eebed069c7904deb46f486e4c922f59f258",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 19,
+    "viewer_text": "\"cafe pepper rose\" menu board",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4966",
+    "paper_task": "visibility",
+    "image_sha256": "ef7290ea4c49d30addb32b5e3660614fb272217dee27375f01495bfae3f1f600",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 17,
+    "viewer_text": "shepherd",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4970",
+    "paper_task": "visibility",
+    "image_sha256": "5c6ba79a6463941b0289ebcc4f192b7a01de9f3a96d1f090d97bbe0bc6f09363",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 15,
+    "viewer_text": "person",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "5012",
+    "paper_task": "visibility",
+    "image_sha256": "174c3d685d24cea541fe6ff3fd47add9ffa0586dbb0a0039dea38050c7a13e0e",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 13,
+    "viewer_text": "golf car",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4798",
+    "paper_task": "visibility",
+    "image_sha256": "381f1cb5e5f4a402027a9e6cf18f0979b73f4fcb65a70ebfee052c749745a754",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 12,
+    "viewer_text": "dog",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5080",
+    "paper_task": "visibility",
+    "image_sha256": "f7e2901ec0fcdce9926c3ad174bb4747b29aa43a2721ada2f77e5e944393593a",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 11,
+    "viewer_text": "smiley face",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4810",
+    "paper_task": "visibility",
+    "image_sha256": "254c4e5c4035732654fef111a857a13515bc7eaebfb3f7be8b455e8b310f84b5",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 10,
+    "viewer_text": "electronic information board",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5098",
+    "paper_task": "visibility",
+    "image_sha256": "cad569f86aef92294f4cd62f3223cd629903d010c0d0ed108c2a8bf97396a3c8",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 9,
+    "viewer_text": "motorcycle",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4814",
+    "paper_task": "visibility",
+    "image_sha256": "dacbde3a1e30a4d1a57556b94c50cd9cf412c77f0642d6b04bed876754fec0f9",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 8,
+    "viewer_text": "child",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5236",
+    "paper_task": "visibility",
+    "image_sha256": "d4f3bac90a855a3056afd56b5940ce5c7deb71b3149fe7924f1ab17e03d0729d",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 7,
+    "viewer_text": "wood chair",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4822",
+    "paper_task": "visibility",
+    "image_sha256": "ede5a2830c7159f41c5d5693775bbed9a4a3d0b36b01866c6ed41102a9695032",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 6,
+    "viewer_text": "fireplace",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5270",
+    "paper_task": "visibility",
+    "image_sha256": "0a3fc714e174815002c1da4ad5c17059bd153cb2e9c1768a0a756abbea260f3e",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 5,
+    "viewer_text": "person in white",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4870",
+    "paper_task": "visibility",
+    "image_sha256": "b32d934a037752df979e757c41f90087b2b53680b00e23abcd86e7e974435c06",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 4,
+    "viewer_text": "red truck",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5300",
+    "paper_task": "visibility",
+    "image_sha256": "462f82ccc771688a3ff2da1ec04e20cd910e0d782a7eb268e85d86cdad5b3d2a",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": 3,
+    "viewer_text": "motorbike",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "4932",
+    "paper_task": "visibility",
+    "image_sha256": "86577ef4982ee22e568b0faadee5ea2971085ba7291e27f35e8679ab948faf67",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 2,
+    "viewer_text": "person on the left",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "4946",
+    "paper_task": "visibility",
+    "image_sha256": "62a9a0497d77f588206beba9f3aeb64e09d397641b968cba6b8360aae77fafe4",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": 0,
+    "viewer_text": "small white van",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "4984",
+    "paper_task": "visibility",
+    "image_sha256": "d5a535cd36703283f311952182c3129c4779707d683372c2fdad2f8cf24439bf",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -2,
+    "viewer_text": "bear",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "4988",
+    "paper_task": "visibility",
+    "image_sha256": "7305175dd1094f738a77a29c2bc9e029276bc371c9ad66afd5deb437f3de692a",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -4,
+    "viewer_text": "cow",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "4968",
+    "paper_task": "visibility",
+    "image_sha256": "0c101fea07cdd6c36cbb290a415c278d77f61f248e93408cb4ced7dc89bce08f",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": -5,
+    "viewer_text": "shepherd",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "5018",
+    "paper_task": "visibility",
+    "image_sha256": "eba8f28dba12c2a7efad1d566a5873a4101110f525b31fe3a31c5d625ffa473a",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 20,
+    "selection_utility": -6,
+    "viewer_text": "man with a backpack",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct"
+    ]
+  },
+  {
+    "sample_id": "5302",
+    "paper_task": "visibility",
+    "image_sha256": "111c6b45da2159a15fb5175954b3e6b9974ed882f25c372fbd3942a5eb97bc83",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 25,
+    "selection_utility": -7,
+    "viewer_text": "motorbike",
+    "selection_reasons": [
+      "all_available_others_wrong"
+    ]
+  },
+  {
+    "sample_id": "5050",
+    "paper_task": "visibility",
+    "image_sha256": "ed4a7c1a5eee2d5d5f6577ab20231831cbbc80e7bbf49e962fd84219dc47c483",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 70,
+    "selection_utility": 38,
+    "viewer_text": "woman with yellow pants",
+    "selection_reasons": [
+      "all_available_others_wrong",
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "4928",
+    "paper_task": "visibility",
+    "image_sha256": "5430bd4eb5a90023279ba7e48f7eca8a8c08964a70fca472bb3b8217587d72d4",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 31,
+    "viewer_text": "women wearing a red helmet",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "5052",
+    "paper_task": "visibility",
+    "image_sha256": "2023930f0fa71caf5c5a648361897f7617f5911ca9fa3caba43786fa9eb048c4",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 70,
+    "selection_utility": 22,
+    "viewer_text": "woman with yellow pants",
+    "selection_reasons": [
+      "all_available_others_wrong",
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "4818",
+    "paper_task": "visibility",
+    "image_sha256": "4992b6c3d657eb5460b96a092e0aefab4d1e5673dfe0daf50f145fd7a0f9679a",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 9,
+    "viewer_text": "two ladies",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "4828",
+    "paper_task": "visibility",
+    "image_sha256": "e724a7207eb727fce2394289d26cdd0dbaa12b0cb59ca0611328a5ec7072755c",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 7,
+    "viewer_text": "bench",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "4830",
+    "paper_task": "visibility",
+    "image_sha256": "bcbc76e82c04f4ae2924fb07c6f517fde19fa5c9776b6592e5ddee1f2a77b6b1",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 5,
+    "viewer_text": "kid",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "4840",
+    "paper_task": "visibility",
+    "image_sha256": "54e1755d73512885205c8a41188d321eac5cc339988dc86186753ca7c2beeda3",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 3,
+    "viewer_text": "skier",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "4846",
+    "paper_task": "visibility",
+    "image_sha256": "29526811701ef8c0ae8c46f8e2ae0c782736b5e9b21822187138802e892e8dfc",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 1,
+    "viewer_text": "bear statue",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "4802",
+    "paper_task": "visibility",
+    "image_sha256": "9bd46338b0dd0f2610cb07fca400cbd7fc9119f4a25ad68ee7ef1af33a9f10ba",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "cat",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "4842",
+    "paper_task": "visibility",
+    "image_sha256": "9210547c0054731ba548f25ae80a678e3bc239053d4bd0661cf5d5408eee0866",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "baggage tractor",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "4856",
+    "paper_task": "visibility",
+    "image_sha256": "c88bcadf92d6d279fc3248016772bbadbf4bfcbca211387ee79ced58a1eeda3b",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "fridge",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "4860",
+    "paper_task": "visibility",
+    "image_sha256": "de8795a9a971ce4afffbade2d13b9fb017a2847abdd258314f68f742ac667ba1",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "chair",
+    "selection_reasons": [
+      "diverse_image_control"
+    ]
+  },
+  {
+    "sample_id": "8379",
+    "paper_task": "facing",
+    "image_sha256": "34fbded570cf98b007fd50b2cdaff7b0c19874f3284b98716f4edc099bb049a8",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 55,
+    "viewer_text": "piano",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8442",
+    "paper_task": "facing",
+    "image_sha256": "69d9d36e9cbec3f5500517c04ad198b03ad2caa01c82e808bcc96a36b1f347a4",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 51,
+    "viewer_text": "man with black hat",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8457",
+    "paper_task": "facing",
+    "image_sha256": "1d8ed1c1f1360f07443db70873582e44735f7fcdb18d40943f103cbca0276907",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 47,
+    "viewer_text": "dog",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8362",
+    "paper_task": "facing",
+    "image_sha256": "0acbd7a7050f42e724b47f3ecc58bc791bde904e10c7ea412d70c441f993ac4b",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 50,
+    "selection_utility": 44,
+    "viewer_text": "pay here sign",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8460",
+    "paper_task": "facing",
+    "image_sha256": "290c735e2fdee54757fc14963bc2f8018500f73038e140174667b75ffc58f166",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 41,
+    "viewer_text": "faucet",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8552",
+    "paper_task": "facing",
+    "image_sha256": "f6bff1000af8cbc600506784331a8587e8f84815a48ef9b46b9029616708271c",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 50,
+    "selection_utility": 38,
+    "viewer_text": "teddy bear",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8475",
+    "paper_task": "facing",
+    "image_sha256": "ca591d1d7a14ef4a856060fe975d8dbe12d52bd776aa2f600026332420f69201",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 35,
+    "viewer_text": "couch",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8614",
+    "paper_task": "facing",
+    "image_sha256": "ce8ba548111b23a04f92a3f8cca66e3172d5da5903634e20c956eca8381f0617",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 50,
+    "selection_utility": 32,
+    "viewer_text": "engine of the white boat",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8534",
+    "paper_task": "facing",
+    "image_sha256": "553333f2313f28faafd1342b0d3426a66a42187a34b6b83252a0e9fac8cd5eba",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 29,
+    "viewer_text": "clock",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8620",
+    "paper_task": "facing",
+    "image_sha256": "8944d09400ad41ea3ba990f0a8b760f6ee8e38ffe687dc5feb54a190b6d90997",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 50,
+    "selection_utility": 26,
+    "viewer_text": "woman in black",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8617",
+    "paper_task": "facing",
+    "image_sha256": "2f8191ade35024d5776874c74d2eb4b87fe1398f6998a9872380ce36c4d6322c",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 23,
+    "viewer_text": "white boat",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8640",
+    "paper_task": "facing",
+    "image_sha256": "327ac952c59478c5920b34d621fafc4ed75bd36e867c51f32d8021419f5bd838",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 19,
+    "viewer_text": "man",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8682",
+    "paper_task": "facing",
+    "image_sha256": "f3b3584aced08c00848e22a669c5f7ba45cee645a891639c2e7ec89ac40e5cb1",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 15,
+    "viewer_text": "man in grey shirt",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8477",
+    "paper_task": "facing",
+    "image_sha256": "62bd638ca3e3bca2f42ee34f4b58ed00b097a7b95e2c62346c2186fb2981a0e1",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 35,
+    "selection_utility": 11,
+    "viewer_text": "couch",
+    "selection_reasons": [
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8701",
+    "paper_task": "facing",
+    "image_sha256": "b57ee3a3f85824df793c471f295f2bcffc845c71ff0d982d2483954cbc528c1d",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 9,
+    "viewer_text": "fan",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8915",
+    "paper_task": "facing",
+    "image_sha256": "b534c0b37e8cbd67151267826f708d50a8710fc5534eb5802805288811537266",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": 5,
+    "viewer_text": "skateboard",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8346",
+    "paper_task": "facing",
+    "image_sha256": "8af4ae33be5058ad35bfd532233422ff3ecf900e82199376623e81474c240ce9",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "tv",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8688",
+    "paper_task": "facing",
+    "image_sha256": "0710b88f2a11f286b32ff5f1ed5e4a67356f8661027ba43995e5014ae9e2b4cd",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "woman",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8714",
+    "paper_task": "facing",
+    "image_sha256": "86c9ab80473c619637456f3c4477c2ae52167bd634dc0932a293900558fd1310",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "oven",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8748",
+    "paper_task": "facing",
+    "image_sha256": "4e5ab9e07aaf8ffaa1431c53269909b45b6838076f038425f694a8ecc40fe6ad",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "bicycle",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8778",
+    "paper_task": "facing",
+    "image_sha256": "6df0367cdc09c014331cc1dae045b4df55e4b7415876a12529efbd4aa370df16",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "laptop",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8854",
+    "paper_task": "facing",
+    "image_sha256": "f54f26bfeb17cf962f0ee96ffbe1fe06a1898190dd0771385925c19a95386917",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": 0,
+    "viewer_text": "dog with orange shoes",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8444",
+    "paper_task": "facing",
+    "image_sha256": "622b5bbbc6a6df3699adbf5ec35898a821ee0692c426ef6953744ce08dede170",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": -5,
+    "viewer_text": "man with black hat",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8402",
+    "paper_task": "facing",
+    "image_sha256": "2b3159d1ca2b7e8a0ad4219eef3aa4bd1268dc18187b5a21a0febba65b38468c",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": -6,
+    "viewer_text": "dog",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8486",
+    "paper_task": "facing",
+    "image_sha256": "258ec64374fb624c1ceb41766cd420810a1170d3378f8809d6b6c4c6a05e7ca7",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": -6,
+    "viewer_text": "faucet",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8750",
+    "paper_task": "facing",
+    "image_sha256": "2e99be52a43c1f62259d2603c08675074498a96005b14865b0ff5d80324fc04e",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": -6,
+    "viewer_text": "bicycle",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8814",
+    "paper_task": "facing",
+    "image_sha256": "e4db674d7e69572594b8e8d02c8d952377bffadecbfd65333b39dad46b3aca6d",
+    "prior_prediction": "A",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 0,
+    "selection_utility": -6,
+    "viewer_text": "tv",
+    "selection_reasons": [
+      "diverse_image_failure"
+    ]
+  },
+  {
+    "sample_id": "8536",
+    "paper_task": "facing",
+    "image_sha256": "15d41830b314391503a9b6370a3365bc0190bf25ab831a1a5a8cc516854c39bb",
+    "prior_prediction": "B",
+    "prior_correct": false,
+    "prior_status": "ok",
+    "information_score": 55,
+    "selection_utility": -9,
+    "viewer_text": "clock",
+    "selection_reasons": [
+      "APC_wrong_other_model_correct",
+      "APC_answer_changes_under_option_permutation"
+    ]
+  },
+  {
+    "sample_id": "8270",
+    "paper_task": "facing",
+    "image_sha256": "d0ee6e5166a0d99990224a8048f6c98b3ff3230d1194ab94e4fa0f56f58e85e2",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 37,
+    "viewer_text": "blue sign with arrow",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8690",
+    "paper_task": "facing",
+    "image_sha256": "cc4efd58f4b226bdb7b819595501ef0d8e736044770475bf9844e1e3cd7563ec",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 33,
+    "viewer_text": "woman with black hat",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8618",
+    "paper_task": "facing",
+    "image_sha256": "e417ee294aad0b07445dc3418684746d19505689bb2f23dfb4a70626d7071463",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 23,
+    "viewer_text": "woman in black",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8936",
+    "paper_task": "facing",
+    "image_sha256": "271b0ec8e8398e562f16a6360c1f238d590b96497ab44e94372cc5b788114d05",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 30,
+    "selection_utility": 16,
+    "viewer_text": "\"not in service\" sign",
+    "selection_reasons": [
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8626",
+    "paper_task": "facing",
+    "image_sha256": "1f3b4df7ac207f14f34c265448f63b1f6b2472671dcc875e10be9d2b91a9368a",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 45,
+    "selection_utility": 11,
+    "viewer_text": "tv",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong",
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8279",
+    "paper_task": "facing",
+    "image_sha256": "66ca05c7ed0fcd138e5bfebdc29505a9aa57120dc13ab48387db6766025311b6",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 7,
+    "viewer_text": "price sign",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "8268",
+    "paper_task": "facing",
+    "image_sha256": "df5dacf8d29fab7f5df2039e7a4af6d3b45975942ba550c201424c5f54db3846",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 30,
+    "selection_utility": 6,
+    "viewer_text": "blue sign with arrow",
+    "selection_reasons": [
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8284",
+    "paper_task": "facing",
+    "image_sha256": "8b819cc8e59e24975e2b1483d1bf28ba0560c2946b5a3fcaab23b79733def137",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 5,
+    "viewer_text": "toolbox",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "8364",
+    "paper_task": "facing",
+    "image_sha256": "2338dbe055754cdd4547c62a78cb5515a1629f844babed508f3c11db938a35dc",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 30,
+    "selection_utility": 4,
+    "viewer_text": "pay here sign",
+    "selection_reasons": [
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8298",
+    "paper_task": "facing",
+    "image_sha256": "9dffc38aa21b7b7b5b6896fc1a3af0335be65702fe06c5d3aed991f3260bee04",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 3,
+    "viewer_text": "picture on the wall",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  },
+  {
+    "sample_id": "8550",
+    "paper_task": "facing",
+    "image_sha256": "f18c0d65d50ab13069b52136bc507184d66350d7338255a2e6dafa64606decee",
+    "prior_prediction": "B",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 30,
+    "selection_utility": 2,
+    "viewer_text": "teddy bear",
+    "selection_reasons": [
+      "viewer_repaired_by_question_subject"
+    ]
+  },
+  {
+    "sample_id": "8304",
+    "paper_task": "facing",
+    "image_sha256": "14f7dece5e68e5a5590f8a5a48acbf2f5b5bc326c5e7c5a60152a466f71f3035",
+    "prior_prediction": "A",
+    "prior_correct": true,
+    "prior_status": "ok",
+    "information_score": 15,
+    "selection_utility": 1,
+    "viewer_text": "brown couch",
+    "selection_reasons": [
+      "APC_correct_other_model_wrong"
+    ]
+  }
+]

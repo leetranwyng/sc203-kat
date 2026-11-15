@@ -1,0 +1,30 @@
+{
+  "total_rows": 2078,
+  "total_groups": 1039,
+  "counts": {
+    "visibility": 688,
+    "left_right": 698,
+    "facing": 692
+  },
+  "example": {
+    "sample_id": "4798",
+    "question_id": "7N2PSCLH",
+    "question": "Consider the real-world 3D locations and orientations of the objects. If I stand at the dog's position facing where it is facing, is the white board visible or not?",
+    "choices": {
+      "A": "yes",
+      "B": "no"
+    },
+    "answer": "A",
+    "category": "orientation_in_front_of",
+    "circular_group": "7N2PSCLH",
+    "image_path": "/kaggle/working/sensenova_qwen_3dsrbench/data/images/381f1cb5e5f4a402027a9e6cf18f0979b73f4fcb65a70ebfee052c749745a754.img",
+    "paper_task": "visibility",
+    "source_question": "Consider the real-world 3D locations and orientations of the objects. If I stand at the dog's position facing where it is facing, is the white board in front of me or behind me?",
+    "source_choices": {
+      "A": "in front of",
+      "B": "behind"
+    },
+    "question_transform": "front_behind_to_visibility_yes_no_v1"
+  },
+  "note": "Verified deterministic recast from released original TSV metadata. This is not a claim of verbatim equivalence to an unreleased author evaluator."
+}

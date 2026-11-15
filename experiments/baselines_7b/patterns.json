@@ -1,0 +1,1022 @@
+[
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 40
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 135
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 31
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 180
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 8
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 6
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 10
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 26
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 43
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 4
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 39
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 18
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 9
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 12
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 5
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 9
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 21
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 2
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 15
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 7
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 17
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 1
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 24
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 11
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 2
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 2
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 8
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 2
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 4
+  },
+  {
+    "task": "left_right",
+    "models": [
+      "APC-Vis",
+      "PCD",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 7
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 255
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 93
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 82
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 50
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 39
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 70
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 51
+  },
+  {
+    "task": "front_behind",
+    "models": [
+      "PCD",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 48
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 216
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 239
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 22
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 37
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 60
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 15
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 62
+  },
+  {
+    "task": "visibility",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 37
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 235
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 42
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 40
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 57
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 79
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 4
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 15
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Correct",
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 21
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 49
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 33
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 8
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Correct",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 20
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Correct"
+    ],
+    "rows": 36
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Correct",
+      "Wrong"
+    ],
+    "rows": 13
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Correct"
+    ],
+    "rows": 17
+  },
+  {
+    "task": "facing",
+    "models": [
+      "APC-Vis",
+      "SymPL",
+      "VST",
+      "Spatial-SSRL"
+    ],
+    "states": [
+      "Wrong",
+      "Wrong",
+      "Wrong",
+      "Wrong"
+    ],
+    "rows": 23
+  }
+]

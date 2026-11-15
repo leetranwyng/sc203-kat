@@ -1,0 +1,11 @@
+{
+  "method": "apc_vis",
+  "mode": "full",
+  "run_name": "apc_vis_full",
+  "model_input": null,
+  "dataset_input": null,
+  "resume_input": null,
+  "output_dir": "/kaggle/working/sc203-kat/apc_vis_full",
+  "runtime_dir": "/kaggle/temp/sc203-kat-runtime/apc_vis",
+  "method_options": {}
+}

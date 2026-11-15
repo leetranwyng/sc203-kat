@@ -1,0 +1,10 @@
+{
+  "method": "sympl",
+  "mode": "full",
+  "model_input": null,
+  "dataset_input": null,
+  "resume_input": null,
+  "method_options": {
+    "scope": "paper_tasks_visibility"
+  }
+}

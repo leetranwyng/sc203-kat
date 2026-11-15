@@ -1,0 +1,8 @@
+{
+  "python": "3.10",
+  "torch": "2.4.1+cu124",
+  "transformers": "4.57.1",
+  "cuda": "12.4",
+  "setup_source": "profiles/apc_vis",
+  "notes": "Migrated setup retains additional native dependencies for geometric methods. Environment freeze is written in run output."
+}

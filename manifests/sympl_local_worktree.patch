@@ -1,0 +1,103 @@
+diff --git a/sympl/prompt_extraction.py b/sympl/prompt_extraction.py
+index 1fe5c97..aeda409 100644
+--- a/sympl/prompt_extraction.py
++++ b/sympl/prompt_extraction.py
+@@ -136,11 +136,48 @@ def select_category_from_question(
+     )
+     
+     response_category = vlm_model.process_messages(messages)
++    valid_categories = ['visibility', 'left_right', 'facing', 'closer', 'above_below', 'front_behind']
+ 
++    # 1. Standard pattern --category--
+     pattern_select_category = prompt_parser.get_prompt_by_type("pattern_select_category")
+     match_category = re.findall(pattern_select_category, response_category)
+-
+-    if len(match_category)==0:
+-        return None
+-
+-    return match_category[0]
++    if len(match_category) > 0:
++        c = match_category[0].strip().lower()
++        if c in valid_categories:
++            return c
++
++    # 2. Flexible dashes or markdown: -- category -- or **category**
++    m = re.search(r'[-*]{2}\s*([a-zA-Z_]+)\s*[-*]{2}', response_category)
++    if m:
++        c = m.group(1).strip().lower()
++        if c in valid_categories:
++            return c
++
++    # 3. [Category] category_name or Category: category_name
++    m = re.search(r'\[Category\]\s*:?\s*-*\s*([a-zA-Z_]+)', response_category, re.IGNORECASE)
++    if m:
++        c = m.group(1).strip().lower()
++        if c in valid_categories:
++            return c
++
++    # 4. Word boundary match in response
++    for valid_c in valid_categories:
++        if re.search(r'\b' + valid_c + r'\b', response_category.lower()):
++            return valid_c
++
++    # 5. Question heuristic fallback
++    p_lower = prompt.lower()
++    if 'visible' in p_lower or 'visibility' in p_lower:
++        return 'visibility'
++    if 'left or right' in p_lower or 'on the left' in p_lower or 'on the right' in p_lower:
++        return 'left_right'
++    if 'facing towards' in p_lower or 'facing toward' in p_lower or 'facing' in p_lower:
++        return 'facing'
++    if 'closer' in p_lower:
++        return 'closer'
++    if 'above' in p_lower or 'below' in p_lower:
++        return 'above_below'
++    if 'front' in p_lower or 'behind' in p_lower:
++        return 'front_behind'
++
++    return None
+diff --git a/sympl/prompts.py b/sympl/prompts.py
+index 254ca97..955900c 100644
+--- a/sympl/prompts.py
++++ b/sympl/prompts.py
+@@ -169,7 +169,7 @@ This is an image of a simple 2D Scene.
+ Based on the image, please answer the following question.
+ [Question] In the image, is the {obj} dot located in the 'yellow' area or the 'black' area?
+ 
+-Please only return the answer.
++Answer with only one word: 'Yellow' or 'Black'.
+ """
+ 
+ PROMPT_FACING_SIMPLE = """
+diff --git a/sympl/utils.py b/sympl/utils.py
+index 90e4165..498bc05 100644
+--- a/sympl/utils.py
++++ b/sympl/utils.py
+@@ -373,7 +373,26 @@ def symbolic_layout_prompting(
+         print(f"\n[VLM Input Prompt]\n{simple_prompt}\n")
+         res = vlm_model.process_messages(add_message([], image=simple_img, text=simple_prompt))
+         print(f"[VLM Output Response]\n{res}\n")
+-        response_sympl = "Yes, Visible" if 'yellow' in res.lower() else ("Not" if 'black' in res.lower() else "fail")
++        
++        res_lower = res.lower().strip()
++        has_yellow = bool(re.search(r'\byellow\b', res_lower))
++        has_black = bool(re.search(r'\bblack\b', res_lower))
++        
++        if has_yellow and has_black:
++            if any(neg in res_lower for neg in ['not in yellow', 'not in the yellow', 'not yellow', 'is in black', 'is in the black', 'is black']):
++                response_sympl = "Not"
++            elif any(neg in res_lower for neg in ['not in black', 'not in the black', 'not black', 'is in yellow', 'is in the yellow', 'is yellow']):
++                response_sympl = "Yes, Visible"
++            else:
++                idx_y = res_lower.rfind('yellow')
++                idx_b = res_lower.rfind('black')
++                response_sympl = "Yes, Visible" if idx_y > idx_b else "Not"
++        elif has_yellow:
++            response_sympl = "Yes, Visible"
++        elif has_black:
++            response_sympl = "Not"
++        else:
++            response_sympl = "fail"
+ 
+     if conv_history is not None:
+         conv_history += [{'text': category, 'image': None}, {'text': str(response_sympl), 'image': simple_img}]

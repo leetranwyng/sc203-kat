@@ -1,0 +1,61 @@
+{
+  "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "dataset_id": "ccvl/3DSRBench",
+  "data_revision": "5c90e422b68d0484d50a3ff06b3096ea7d288026",
+  "data_file": "3dsrbench_v1_vlmevalkit_circular.tsv",
+  "dataset_input": null,
+  "asset_input": null,
+  "asset_root": "/kaggle/temp/apc_7b_assets",
+  "experiment": "sc203_kat_apc_vis_7b",
+  "scope": "paper_tasks_visibility",
+  "modes": [
+    "apc_vis"
+  ],
+  "seed": 42,
+  "dtype": "float16",
+  "min_pixels": null,
+  "max_pixels": null,
+  "intermediate_max_new_tokens": 1024,
+  "final_max_new_tokens": 512,
+  "max_input_tokens": 32768,
+  "detection_box_threshold": 0.05,
+  "detection_text_threshold": 0.05,
+  "limit": null,
+  "sample_timeout_seconds": 900,
+  "load_timeout_seconds": 1800,
+  "retry_failed": false,
+  "parse_policy": "strict_letter_or_unique_exact_choice_v1",
+  "source_snapshot_sha": "9059ed359baf89b49675ed3e0407f843b3ff28de78e5cae1c870adf79f44a339",
+  "runtime_sha": "178bd62f6a753f5731d940d9f876596ceeb239b640d9d789f53aa896d4f27283",
+  "sanity": false,
+  "vlm_activation_reserve_gib": [
+    3.0,
+    2.0
+  ],
+  "vision_reserve_gib": 6.0,
+  "vision_offload": true,
+  "run_kind": "full",
+  "paper_tasks": [
+    "left_right",
+    "visibility",
+    "facing"
+  ],
+  "resume_input": null,
+  "disk_min_free_gib": 1.5,
+  "trace_max_total_mib": 128,
+  "trace_max_sample_mib": 128,
+  "trace_keep_per_task": 0,
+  "archive_max_mib": 64,
+  "max_consecutive_errors": 25,
+  "max_total_errors": 1000,
+  "run_timeout_seconds": 25200,
+  "expected_rows": 2078,
+  "expected_circular_groups": 1039,
+  "expected_task_counts": {
+    "left_right": 698,
+    "visibility": 688,
+    "facing": 692
+  },
+  "reference_viewer_policy": "unique_scene_key_with_quote_and_person_number_normalization_v2"
+}

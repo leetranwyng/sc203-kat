@@ -1,0 +1,30 @@
+{
+  "dataset_id": "ccvl/3DSRBench",
+  "dataset_revision": "5c90e422b68d0484d50a3ff06b3096ea7d288026",
+  "file": "3dsrbench_v1_vlmevalkit_circular.tsv",
+  "tasks": {
+    "left_right": {
+      "category": "orientation_on_the_left",
+      "rows": 698,
+      "groups": 349
+    },
+    "front_behind": {
+      "category": "orientation_in_front_of",
+      "rows": 688,
+      "groups": 344
+    },
+    "visibility": {
+      "source_category": "orientation_in_front_of",
+      "rows": 688,
+      "groups": 344,
+      "separate_protocol": true
+    },
+    "facing": {
+      "category": "multi_object_facing",
+      "rows": 692,
+      "groups": 346
+    }
+  },
+  "score_policy": "all_fail_invalid_error_count_as_wrong",
+  "baseline_scope": "selected tasks, not full benchmark"
+}

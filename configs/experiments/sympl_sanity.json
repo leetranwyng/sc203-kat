@@ -1,0 +1,11 @@
+{
+  "method": "sympl",
+  "mode": "sanity",
+  "run_name": "sympl_sanity",
+  "model_input": null,
+  "dataset_input": null,
+  "resume_input": null,
+  "output_dir": "/kaggle/working/sc203-kat/sympl_sanity",
+  "runtime_dir": "/kaggle/temp/sc203-kat-runtime/sympl",
+  "method_options": {}
+}

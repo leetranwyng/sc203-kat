@@ -1,0 +1,13 @@
+{
+  "method": "sympl",
+  "stages": [
+    "01_prepare.py",
+    "02_environment.py",
+    "03_native_assets.py",
+    "04_run.py",
+    "05_export.py"
+  ],
+  "origin_notebook": "notebooks/spatial_trials/sympl_7b_full_kaggle.ipynb",
+  "origin_sha256": "2408ff0d121eb2593f9937754f59088e148fd20970b337fbbf05b794add6ce1d",
+  "validation": "Static migration only; no new GPU inference has been run."
+}

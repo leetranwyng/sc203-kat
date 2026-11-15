@@ -1,0 +1,8 @@
+{
+  "method": "apc_vis",
+  "mode": "full",
+  "model_input": null,
+  "dataset_input": null,
+  "resume_input": null,
+  "method_options": {}
+}

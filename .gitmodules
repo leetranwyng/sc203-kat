@@ -1,0 +1,15 @@
+[submodule "apc_vlm"]
+	path = third_party/apc_vlm
+	url = https://github.com/KAIST-Visual-AI-Group/APC-VLM.git
+[submodule "pcd"]
+	path = third_party/pcd
+	url = https://github.com/hjchung1/PCD.git
+[submodule "sympl"]
+	path = third_party/sympl
+	url = https://github.com/AIRLABkhu/SymPL.git
+[submodule "vst"]
+	path = third_party/vst
+	url = https://github.com/Yangr116/VST.git
+[submodule "spatial_ssrl"]
+	path = third_party/spatial_ssrl
+	url = https://github.com/InternLM/Spatial-SSRL.git

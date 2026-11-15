@@ -1,0 +1,11 @@
+{
+  "method": "vst",
+  "mode": "sanity",
+  "run_name": "vst_sanity",
+  "model_input": null,
+  "dataset_input": null,
+  "resume_input": null,
+  "output_dir": "/kaggle/working/sc203-kat/vst_sanity",
+  "runtime_dir": "/kaggle/temp/sc203-kat-runtime/vst",
+  "method_options": {}
+}

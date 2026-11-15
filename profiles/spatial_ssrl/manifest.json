@@ -1,0 +1,13 @@
+{
+  "method": "spatial_ssrl",
+  "stages": [
+    "01_prepare.py",
+    "02_environment.py",
+    "03_native_assets.py",
+    "04_run.py",
+    "05_export.py"
+  ],
+  "origin_notebook": "notebooks/spatial_trials/ssrl_7b_full_kaggle.ipynb",
+  "origin_sha256": "84c7add5b135e8550853dd410ee0bdadd201a19bd0320a7a256f4e7878e38ec6",
+  "validation": "Static migration only; no new GPU inference has been run."
+}

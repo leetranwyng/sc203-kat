@@ -1,0 +1,12 @@
+{
+  "method": "pcd",
+  "stages": [
+    "01_environment.py",
+    "02_sources.py",
+    "03_configure.py",
+    "04_run.py"
+  ],
+  "origin_notebook": "notebooks/qwen7b/PCD_Qwen7B_full_trace_kaggle.ipynb",
+  "origin_sha256": "0e32d7964ccb8c38150097120c14f172d333b55101449390c3aba24d4dccc1ba",
+  "validation": "Static migration only; no new GPU inference has been run."
+}

@@ -1,0 +1,18 @@
+{
+  "title": "SC203 five 7B baselines",
+  "source_workspace": "E:/SC203/APC-VLM/results_five7b",
+  "models": [
+    "APC-Vis",
+    "PCD",
+    "SymPL",
+    "VST",
+    "Spatial-SSRL"
+  ],
+  "scoring": "fail/invalid/error count as wrong; original status retained",
+  "protocols": "Visibility and Front/Behind remain separate",
+  "artifacts": "Raw predictions, trace archives and images remain external; import-results can read the original directory.",
+  "kaggle_sources": {
+    "apc": "https://www.kaggle.com/code/schonfinkle/apc-finalwhen",
+    "vst": "https://www.kaggle.com/code/khaitrannhu/vst-final1"
+  }
+}

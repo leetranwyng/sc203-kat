@@ -1,0 +1,12 @@
+{
+  "method": "vst",
+  "stages": [
+    "01_configure.py",
+    "02_environment.py",
+    "03_sources.py",
+    "04_run.py"
+  ],
+  "origin_notebook": "notebooks/vst7b/VST_7B_RL_3DSRBench_full_Kaggle.ipynb",
+  "origin_sha256": "4c47e448619baafbaec4feaf1bcc9e647c1db477203da03475d84bb4d8175ac0",
+  "validation": "Static migration only; no new GPU inference has been run."
+}

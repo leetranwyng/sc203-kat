@@ -1,0 +1,16 @@
+{
+  "method": "apc_vis",
+  "stages": [
+    "01_prepare.py",
+    "02_configure.py",
+    "03_environment.py",
+    "04_native_assets.py",
+    "05_data.py",
+    "06_launcher.py",
+    "07_run.py",
+    "08_export.py"
+  ],
+  "origin_notebook": "notebooks/completion_7b/APC_Vis_7B_FULL_fixed_assets_Kaggle.ipynb",
+  "origin_sha256": "e4cb4b28358a79fcb903d593036eb4183fc04cae9c239b4bca3e7deaf0800bda",
+  "validation": "Static migration only; no new GPU inference has been run."
+}

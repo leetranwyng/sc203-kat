@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "local-independent-checkouts",
+  "repositories": [
+    {
+      "name": "apc_vlm",
+      "path": "third_party/apc_vlm",
+      "upstream_url": "https://github.com/KAIST-Visual-AI-Group/APC-VLM",
+      "local_head": "d7ca0517b96afbce22ddb7332a8b6361071e0bcf",
+      "pinned_commit": "d7ca0517b96afbce22ddb7332a8b6361071e0bcf",
+      "local_tracked_changes": [],
+      "remote_fork_url": null,
+      "remote_fork_created": false,
+      "validated_runtime_snapshot_sha256": "9059ed359baf89b49675ed3e0407f843b3ff28de78e5cae1c870adf79f44a339",
+      "validated_runtime_snapshot_note": "Archive content hash from benchmark manifest; not a Git commit. Applied runtime patches are preserved in the migrated profile."
+    },
+    {
+      "name": "pcd",
+      "path": "third_party/pcd",
+      "upstream_url": "https://github.com/hjchung1/PCD",
+      "local_head": "8ba5297d266b83d3306cf2df4c343ae90413e953",
+      "pinned_commit": "8ba5297d266b83d3306cf2df4c343ae90413e953",
+      "local_tracked_changes": [],
+      "remote_fork_url": null,
+      "remote_fork_created": false
+    },
+    {
+      "name": "sympl",
+      "path": "third_party/sympl",
+      "upstream_url": "https://github.com/AIRLABkhu/SymPL",
+      "local_head": "384c75d0219dfaaf33280e01ebe5f0d2e19eeed3",
+      "pinned_commit": "384c75d0219dfaaf33280e01ebe5f0d2e19eeed3",
+      "local_tracked_changes": [
+        "M sympl/prompt_extraction.py",
+        " M sympl/prompts.py",
+        " M sympl/utils.py"
+      ],
+      "remote_fork_url": null,
+      "remote_fork_created": false,
+      "local_patch": "manifests/sympl_local_worktree.patch",
+      "local_patch_sha256": "8cb44bc16e7a5c900b4cfc5f91d8bbed88de66f3e67e946dfed7c4b720a8645e"
+    },
+    {
+      "name": "vst",
+      "path": "third_party/vst",
+      "upstream_url": "https://github.com/Yangr116/VST",
+      "local_head": "e373b3d498d8d5e4b0160ad40542fed98079f683",
+      "pinned_commit": "e373b3d498d8d5e4b0160ad40542fed98079f683",
+      "local_tracked_changes": [],
+      "remote_fork_url": null,
+      "remote_fork_created": false
+    },
+    {
+      "name": "spatial_ssrl",
+      "path": "third_party/spatial_ssrl",
+      "upstream_url": "https://github.com/InternLM/Spatial-SSRL",
+      "local_head": "5b27b7b314e65dadccca6e065b8a4dc039534021",
+      "pinned_commit": "5b27b7b314e65dadccca6e065b8a4dc039534021",
+      "local_tracked_changes": [],
+      "remote_fork_url": null,
+      "remote_fork_created": false
+    }
+  ]
+}
