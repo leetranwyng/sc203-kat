@@ -2,7 +2,7 @@
 
 Use `notebooks/apc_ablation/sanity.ipynb` first, then run the two full notebooks:
 `01_sam3_oneref.ipynb` (SAM 3 and OneRef), and `02_orientanything_v2.ipynb` (OA2), on Kaggle
-T4 ×2 with Internet. All three clone public sc203-kat at `v0.3.0-ablation.3`.
+T4 ×2 with Internet. All three clone public sc203-kat at `v0.3.0-ablation.4`.
 The implementation has CPU/static tests; GPU feasibility and numerical behavior
 of the new adapters must be checked with the sanity notebook. No claim of a
 successful Kaggle GPU run is made by the source release.
@@ -168,7 +168,7 @@ python scripts/package_apc_trace_input.py --repair-zip OLD.zip --output FIXED.zi
 ```
 
 Upload the corrected ZIP as the trace Dataset and import the three notebooks
-from release `v0.3.0-ablation.3`. Existing schema-1 inputs remain readable.
+from release `v0.3.0-ablation.4`. Existing schema-1 inputs remain readable.
 
 
 ## OneRef `pkg_resources` import failure
@@ -187,3 +187,23 @@ are skipped. The original run configuration is preserved. A closed Kaggle sessio
 needs the new sanity notebook because its temporary environments are gone.
 
 [Setuptools removal notes](https://setuptools.pypa.io/en/latest/history.html#v82-0-0).
+
+
+## OneRef spaCy/Click compatibility
+
+Version v0.3.0-ablation.3 fixed `pkg_resources`, then the actual OneRef import
+exposed spaCy 3.7.5 importing a missing `click` module. Pin `click==8.1.8`,
+`typer==0.9.0`, `weasel==0.3.4` alongside `setuptools==75.8.0`. Remove
+`typer-slim` before reinstalling Typer because both distributions populate the
+`typer` namespace. These versions satisfy the published spaCy and Weasel
+requirements and retain the Click-based APIs used by that spaCy release.
+
+Auxiliary environments and the real OneRef import now run before APC native
+compilation. The new `OneRef CPU runtime` GitHub workflow additionally exercises
+the production constructor and a CPU forward with random weights. It does not
+measure pretrained performance or prove T4 execution.
+
+The recovery helper supports a setup failure before `repos` and `weights` are
+saved: it reuses `apc_context.json` to skip the completed native setup, resumes
+the old orchestrator and installs only the remaining auxiliary dependencies.
+No baseline inference is run.

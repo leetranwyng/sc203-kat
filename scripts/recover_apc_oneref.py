@@ -23,13 +23,29 @@ def recover(runtime='/kaggle/temp/apc_ablation_runtime/sanity',env=None,run=subp
         auxiliary.pop(key,None)
     py=str(work/'extra_envs/oneref/bin/python')
     if not Path(py).is_file():raise FileNotFoundError('Keep the original Kaggle session active: '+py)
-    print('Repairing setuptools in the existing OneRef environment...',flush=True)
-    run([context['uv'],'pip','install','--python',py,'--no-cache','--no-deps','setuptools==75.8.0'],
+    print('Repairing the legacy OneRef packaging and spaCy CLI dependencies...',flush=True)
+    run([context['uv'],'pip','uninstall','--python',py,'typer-slim','typer'],env=auxiliary,check=True)
+    run([context['uv'],'pip','install','--python',py,'--no-cache','setuptools==75.8.0','click==8.1.8','typer==0.9.0','weasel==0.3.4'],
         env=auxiliary,check=True)
     run([py,'-c','import pkg_resources; from torchmetrics import Metric; from models.OneRef_model import beit3_base_patch16_384_grounding; print("OneRef imports OK")'],
-        env=auxiliary,cwd=cfg['repos']['oneref'],check=True)
+        env=auxiliary,cwd=cfg.get('repos',{}).get('oneref',str(work/'extra_repos/oneref')),check=True)
     freeze=run([context['uv'],'pip','freeze','--python',py],env=auxiliary,check=True,capture_output=True,text=True)
     (audit/'oneref_recovery_environment.txt').write_text(freeze.stdout,encoding='utf8')
+    if not cfg.get('weights') or not cfg.get('repos'):
+        # A setup probe stopped before setup_extra returned. Continue the original
+        # orchestrator with the completed native setup supplied from its checkpoint.
+        code='''import json,sys
+from pathlib import Path
+import sc203_kat
+from sc203_kat.ablation import run as runner, setup
+work=Path(sys.argv[1]);context=json.loads((work/'apc_context.json').read_text())
+cfg=json.loads((work/'ablation.json').read_text());cfg['retry_errors']=True
+setup.setup_apc=lambda cfg,root:context
+runner.run(cfg,Path(sc203_kat.__file__).resolve().parents[2])
+'''
+        print('Resuming the interrupted setup; completed native compilation is reused.',flush=True)
+        run([context['py'],'-u','-c',code,str(work)],env=main,check=True)
+        return
     retry=dict(cfg,retry_errors=True,variants=selected)
     retry_file=work/'oneref_recovery_config.json'
     retry_file.write_text(json.dumps(retry,indent=2),encoding='utf8')

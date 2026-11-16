@@ -15,7 +15,7 @@ class OneRefRecoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             root=Path(t);out=root/'output';out.mkdir()
             py=root/'extra_envs/oneref/bin/python';py.parent.mkdir(parents=True);py.touch()
-            cfg=dict(output_dir=str(out),variants=['sam3','oneref','oa2'],repos={'oneref':str(root/'oneref')})
+            cfg=dict(output_dir=str(out),variants=['sam3','oneref','oa2'],repos={'oneref':str(root/'oneref')},weights={'oneref':'cached.pth'})
             (root/'ablation.json').write_text(json.dumps(cfg))
             context=dict(py='apc-python',uv='uv',env=dict(PYTHONPATH='old-code/src',
                 CUDA_VISIBLE_DEVICES='GPU-0,GPU-1',LD_LIBRARY_PATH='apc-cuda'))
@@ -38,5 +38,34 @@ class OneRefRecoveryTests(unittest.TestCase):
             self.assertEqual(perception['env']['CUDA_VISIBLE_DEVICES'],'GPU-0')
             self.assertEqual(perception['env']['LD_LIBRARY_PATH'],'driver-only')
             self.assertFalse(any('setup_apc' in str(a) or 'sc203_kat.ablation.assets' in a for a,kw in calls))
+
+    def test_setup_probe_failure_resumes_original_runner_without_native_setup(self):
+        import types,sys
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);out=root/'output';out.mkdir()
+            py=root/'extra_envs/oneref/bin/python';py.parent.mkdir(parents=True);py.touch()
+            cfg=dict(output_dir=str(out),variants=['sam3','oneref','oa2'])
+            (root/'ablation.json').write_text(json.dumps(cfg))
+            context=dict(py='apc-python',uv='uv',env=dict(PYTHONPATH='old-code/src',CUDA_VISIBLE_DEVICES='GPU-0,GPU-1'))
+            (root/'apc_context.json').write_text(json.dumps(context))
+            calls=[];resumed=[]
+            package=types.ModuleType('sc203_kat');package.__file__=str(root/'code/src/sc203_kat/__init__.py')
+            ablation=types.ModuleType('sc203_kat.ablation')
+            setup=types.SimpleNamespace(setup_apc=lambda *a:None)
+            def resume(actual_cfg,code_root):
+                self.assertEqual(setup.setup_apc(actual_cfg,code_root),context)
+                self.assertTrue(actual_cfg['retry_errors']);resumed.append(actual_cfg)
+            ablation.run=types.SimpleNamespace(run=resume);ablation.setup=setup
+            def run(args,**kwargs):
+                calls.append(args)
+                if len(args)>3 and args[:3]==['apc-python','-u','-c']:
+                    with patch.dict(sys.modules,{'sc203_kat':package,'sc203_kat.ablation':ablation}), patch.object(sys,'argv',['recover',str(root)]):
+                        exec(args[3],{})
+                return subprocess.CompletedProcess(args,0,stdout='click==8.1.8\n')
+            module.recover(root,env={},run=run)
+            self.assertEqual(len(resumed),1)
+            self.assertEqual(json.loads((root/'ablation.json').read_text()),cfg)
+            self.assertFalse(any('sc203_kat.ablation.apc_worker' in c for c in calls))
 
 if __name__=='__main__':unittest.main()

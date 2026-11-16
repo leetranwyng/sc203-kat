@@ -40,18 +40,22 @@ def sam3_model(cfg):
                     precision='fp32_weights_fp16_autocast',text=text)
     return infer
 
-def oneref_model(cfg):
-    import torch
-    import numpy as np
+def oneref_architecture(tokenizer_path):
     from types import SimpleNamespace
     # Import the registered inference model only. eval.py overrides CUDA_VISIBLE_DEVICES=7.
     from models.OneRef_model import beit3_base_patch16_384_grounding
-    from torchvision.transforms import functional as F
-    args=SimpleNamespace(frozen_backbone=False,max_query_len=64,sentencepiece_model=cfg['weights']['oneref_tokenizer'],
+    args=SimpleNamespace(frozen_backbone=False,max_query_len=64,sentencepiece_model=tokenizer_path,
         enable_ref_mlm=False,text_mask_prob=.4,use_contrastive_loss=False,use_mask_loss=False,
         enable_ref_mim=False,mim_mid_layer=0,shared_lm_head=True)
     model=beit3_base_patch16_384_grounding(args,pretrained=False,drop_path_rate=.1,vocab_size=64010,
                                          checkpoint_activations=None)
+    return model
+
+def oneref_model(cfg):
+    import torch
+    import numpy as np
+    from torchvision.transforms import functional as F
+    model=oneref_architecture(cfg['weights']['oneref_tokenizer'])
     ckpt=torch.load(cfg['weights']['oneref'],map_location='cpu')
     state=ckpt.get('model',ckpt)
     missing, unexpected=model.load_state_dict(state,strict=False)

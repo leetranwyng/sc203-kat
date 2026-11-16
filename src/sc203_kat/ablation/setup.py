@@ -29,6 +29,8 @@ def setup_apc(cfg,root):
     ns.update(CFG=method,OUT=out,CONFIG=work/'config.json')
     write(work/'config.json',method)
     stage('03_environment.py')
+    # Validate auxiliary imports before the long APC native build.
+    extra_repos,extra_pythons=setup_extra(cfg,root,{'uv':str(ns['UV'])})
     ns['ENV']['PYTHONPATH']=str(root/'src')+os.pathsep+ns['ENV']['PYTHONPATH']
     # Replace only the copied runtime asset entry point; tracked APC profile is untouched.
     (ns['SCRIPTS']/'apc_prepare_assets.py').write_text(
@@ -44,6 +46,7 @@ def setup_apc(cfg,root):
           'LD_LIBRARY_PATH','DISPLAY','LIBGL_ALWAYS_SOFTWARE','MESA_GL_VERSION_OVERRIDE','MPLBACKEND',
           'HF_HOME','OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','PYTHONNOUSERSITE']
     context=dict(py=ns['PY'],repo=str(ns['REPO']),scripts=str(ns['SCRIPTS']),cfg=method,
+                 extra_repos=extra_repos,extra_pythons=extra_pythons,
                  uv=str(ns['UV']),asset_root=read(work/'assets_ready.json')['root'],
                  env={k:env[k] for k in keys if k in env})
     write(work/'apc_context.json',context)
@@ -86,6 +89,9 @@ def setup_extra(cfg,root,context):
             def install(packages,extra=()):
                 subprocess.run([uv,'pip','install','--python',py,'--no-cache',*extra,*packages],env=env,check=True)
             install(spec['torch'],['--index-url',spec['index']])
+            if kind=='oneref':
+                # typer-slim and typer install the same namespace; spaCy 3.7 uses legacy Click APIs.
+                subprocess.run([uv,'pip','uninstall','--python',py,'typer-slim','typer'],env=env,check=True)
             install(spec['packages'])
             if kind=='sam3':install(['--no-deps','-e',str(repo)])
             if kind=='oneref':

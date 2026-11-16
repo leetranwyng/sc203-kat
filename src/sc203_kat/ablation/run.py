@@ -90,7 +90,11 @@ def run(cfg,root):
     config=work/'ablation.json';write(config,cfg)
     from .setup import setup_apc,setup_extra
     context=setup_apc(cfg,root)
-    cfg['repos'],pythons=setup_extra(cfg,root,context);write(config,cfg)
+    if 'extra_repos' in context:
+        cfg['repos'],pythons=context['extra_repos'],context['extra_pythons']
+    else:
+        cfg['repos'],pythons=setup_extra(cfg,root,context)
+    write(config,cfg)
     env=dict(os.environ,**context['env']);env['HF_HUB_OFFLINE']='0';env['TRANSFORMERS_OFFLINE']='0'
     def launch(label,py,module,args,extra=False):
         if shutil.disk_usage(out).free<cfg['disk_min_free_gib']*2**30:raise RuntimeError('Low disk; checkpoint retained')
