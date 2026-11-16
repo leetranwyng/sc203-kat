@@ -2,14 +2,14 @@
 
 Use `notebooks/apc_ablation/sanity.ipynb` first, then run the two full notebooks:
 `01_sam3_oneref.ipynb` (SAM 3 and OneRef), and `02_orientanything_v2.ipynb` (OA2), on Kaggle
-T4 ×2 with Internet. All three clone public sc203-kat at `v0.3.0-ablation.1`.
+T4 ×2 with Internet. All three clone public sc203-kat at `v0.3.0-ablation.2`.
 The implementation has CPU/static tests; GPU feasibility and numerical behavior
 of the new adapters must be checked with the sanity notebook. No claim of a
 successful Kaggle GPU run is made by the source release.
 
 ## Inputs
 
-1. Upload the prepared `sc203-apc-trace120.zip` as a Kaggle Dataset (data and
+1. Upload the prepared `sc203_apc_trace120.zip` as a Kaggle Dataset (data and
    historical evidence, not source code). Kaggle should extract it. The folder
    must contain `bundle.json`, `samples.jsonl`, and `original/<sample_id>/`.
    The bundle contains 120 selected traces, 40 each for Left/Right, Visibility,
@@ -149,3 +149,23 @@ Use an empty output folder. The command checks matching cohorts, source and sett
 copies evidence to make a portable report, and generates `index.html`, accuracy and
 paired-outcome tables. It runs no model inference. Include the entire report folder
 when sharing the HTML so its images remain available.
+
+
+## Kaggle filename compatibility
+
+The trace ZIP uses only ASCII letters, digits, dots, underscores and hyphens in
+its paths. Object categories remain verbatim in questions, prompts, JSON values
+and `.name` files. `filename_map.json` records renamed artifacts; image references
+in HTML/JSON and the SHA256 entries in `bundle.json` are updated together. The
+APC runtime also sanitizes newly written candidate/orientation image filenames.
+No inference needs to be repeated to repair the input archive.
+
+`package_apc_trace_input.py` now streams directly to ZIP instead of creating a
+second expanded copy. To fix an existing data archive:
+
+```powershell
+python scripts/package_apc_trace_input.py --repair-zip OLD.zip --output FIXED.zip
+```
+
+Upload the corrected ZIP as the trace Dataset and import the three notebooks
+from release `v0.3.0-ablation.2`. Existing schema-1 inputs remain readable.

@@ -37,6 +37,8 @@ def setup_apc(cfg,root):
     # Trace patching usually happens in the data stage; this replay does not download the TSV.
     subprocess.run([ns['PY'],str(ns['SCRIPTS']/'apc_trace_patches.py'),str(ns['REPO']),
                     str(work/'trace_patches.json')],env=ns['ENV'],check=True)
+    from .portable import patch_apc_filenames
+    write(work/'portable_filename_patches.json',patch_apc_filenames(ns['REPO']))
     env=ns['ENV'];env['PYTHONPATH']=str(root/'src')+os.pathsep+env['PYTHONPATH']
     keys=['PYTHONPATH','CUDA_VISIBLE_DEVICES','CUDA_HOME','CUDA_PATH','PATH','CPATH','LIBRARY_PATH',
           'LD_LIBRARY_PATH','DISPLAY','LIBGL_ALWAYS_SOFTWARE','MESA_GL_VERSION_OVERRIDE','MPLBACKEND',
@@ -47,7 +49,7 @@ def setup_apc(cfg,root):
     write(work/'apc_context.json',context)
     write(out/'source_checkout.json',source_metadata(root,'apc_vis'))
     audit=out/'runtime_audit';audit.mkdir(exist_ok=True)
-    for name in ('source_lock.json','patches.json','trace_patches.json','gpu_check.txt','config.json'):
+    for name in ('source_lock.json','patches.json','trace_patches.json','portable_filename_patches.json','gpu_check.txt','config.json'):
         if (work/name).is_file():shutil.copy2(work/name,audit/name)
     freeze=subprocess.check_output([str(ns['UV']),'pip','freeze','--python',ns['PY']],env=ns['ENV'],text=True)
     (audit/'apc_environment.txt').write_text(freeze,encoding='utf8')

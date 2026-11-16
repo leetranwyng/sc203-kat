@@ -6,7 +6,7 @@ from pathlib import Path
 from build_notebooks import BOOTSTRAP,cell,REPO_URL
 ROOT=Path(__file__).resolve().parents[1]
 
-def main(ref='v0.3.0-ablation.1'):
+def main(ref='v0.3.0-ablation.2'):
     for study, variants in [('sanity',['sam3','oneref','oa2']),('01_sam3_oneref',['sam3','oneref']),('02_orientanything_v2',['oa2'])]:
         mode='sanity' if study=='sanity' else 'full'
         config=dict(method='apc_vis',mode=mode,study=study,trace_input=None,model_input=None,resume_input=None,
@@ -75,4 +75,4 @@ if EXPORT_RESULT_ZIP:
         conf=ROOT/'configs/ablations/experiments'/f'{study}.json';conf.parent.mkdir(parents=True,exist_ok=True);conf.write_text(json.dumps(config,indent=2)+'\n',encoding='utf8')
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--ref',default='v0.3.0-ablation.1');main(p.parse_args().ref)
+    p=argparse.ArgumentParser();p.add_argument('--ref',default='v0.3.0-ablation.2');main(p.parse_args().ref)
