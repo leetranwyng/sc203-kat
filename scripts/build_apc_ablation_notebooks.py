@@ -6,8 +6,9 @@ from pathlib import Path
 from build_notebooks import BOOTSTRAP,cell,REPO_URL
 ROOT=Path(__file__).resolve().parents[1]
 
-def main(ref='v0.3.0-ablation.4'):
+def main(ref='v0.3.0-ablation.4', full_only=False):
     for study, variants in [('sanity',['sam3','oneref','oa2']),('01_sam3_oneref',['sam3','oneref']),('02_orientanything_v2',['oa2'])]:
+        if full_only and study=='sanity':continue
         mode='sanity' if study=='sanity' else 'full'
         config=dict(method='apc_vis',mode=mode,study=study,trace_input=None,model_input=None,resume_input=None,
             output_dir=f'/kaggle/working/apc_ablation_{study}_v4',runtime_dir=f'/kaggle/temp/apc_ablation_runtime/{study}',
@@ -39,6 +40,31 @@ Optional `weight_inputs` avoid auxiliary downloads. `model_input` is the existin
 asset bundle, not just Qwen weights. To resume, add the previous Output as Input and set
 `resume_input` to its `apc_ablation_MODE_v4` folder. Only identical code/config/cohort resume.
 '''.replace('MODE',study)
+        if mode=='full':
+            labels={'01_sam3_oneref':'APC + SAM 3 and APC + OneRef',
+                    '02_orientanything_v2':'APC + Orient Anything V2'}
+            intro=(f'# APC-Vis 7B · Full trace study · {labels[study]}\n\n'
+                   f'Inference source: `{ref}`, matching the successful sanity setup. '
+                   'Run this notebook in its own Kaggle session with **T4 ×2**, **Internet ON**, '
+                   'and Secret **HF_token** enabled. Attach the corrected **sc203_apc_trace120** Dataset.\n\n'
+                   '**Scope: all 120 diagnostic traces: 40 Left/Right, 40 Visibility, 40 Facing.** '
+                   '`sample_ids=None` selects the whole attached trace cohort. This run covers the '
+                   'selected diagnostic cohort; it does not expand to the complete 3DSRBench dataset.\n\n'
+                   f'Branches: **{labels[study]}**. Baseline predictions are read from the saved '
+                   'APC results. Qwen 7B FP16, Depth Pro maps, viewer selection, and renderer '
+                   'follow the same controlled intervention protocol as sanity.\n\n'
+                   'Run All. Results are saved after each sample. All trace images, prompts, '
+                   'candidate boxes, selections, masks, orientations, scenes and rendered views '
+                   'are retained. Error/invalid answers count as Wrong.\n\n'
+                   f'Output: `{config["output_dir"]}`. Save/download the whole output folder '
+                   'to preserve the images linked by `index.html`. Environment and weights stay '
+                   'under `/kaggle/temp`. ZIP export is optional to avoid duplicating large outputs.\n\n'
+                   'If interrupted, attach the previous Output and point `resume_input` to that '
+                   'same run folder. Keep `CODE_REF` and the scientific settings unchanged. '
+                   'Completed results are reused; set `retry_errors=True` only to retry failed units.\n\n'
+                   'The two full notebooks can run independently on separate Kaggle accounts '
+                   'with access to the same Input Dataset. Merge their output folders later with '
+                   '`python -m sc203_kat.ablation.merge --inputs OUTPUT_01 OUTPUT_02 --output COMBINED`.\n')
         text=f"REPO_URL = {REPO_URL!r}\nCODE_REF = {ref!r}\nHF_SECRET_NAME = 'HF_token'\nRUN_CONFIG = "+pprint.pformat(config,sort_dicts=False,width=100)+'\n'
         run="""# This orchestration process does not load ML models in the notebook kernel.
 subprocess.run([sys.executable, '-u', '-m', 'sc203_kat.ablation.run', '--config', str(CONFIG_PATH)],
@@ -57,6 +83,21 @@ if (output / 'summary.json').exists():
 else:
     print('No summary yet. Inspect the setup cell and logs; rerun after fixing the reported failure.')
 """
+        if mode=='full':
+            view='''from IPython.display import FileLink, display
+output = Path(RUN_CONFIG['output_dir'])
+print('Results:', output)
+if (output / 'summary.json').exists():
+    import pandas as pd
+    summary = json.loads((output / 'summary.json').read_text())
+    display(pd.DataFrame(summary['by_task'])[['variant', 'task', 'correct', 'wrong', 'accuracy']])
+    display(pd.DataFrame(summary['pairs']))
+    for name in ('index.html', 'accuracy.csv', 'paired_outcomes.csv', 'predictions.jsonl', 'summary.json'):
+        display(FileLink(str(output / name)))
+    print('Download the complete output folder to keep the HTML images and stage evidence.')
+else:
+    print('Inspect setup output and logs. Completed per-sample results remain in the output folder.')
+'''
         export="""# Optional: archive RESULTS only; source code always comes from GitHub.
 # Keep false to avoid storing a second copy when Kaggle disk is low.
 EXPORT_RESULT_ZIP = False
@@ -75,4 +116,5 @@ if EXPORT_RESULT_ZIP:
         conf=ROOT/'configs/ablations/experiments'/f'{study}.json';conf.parent.mkdir(parents=True,exist_ok=True);conf.write_text(json.dumps(config,indent=2)+'\n',encoding='utf8')
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--ref',default='v0.3.0-ablation.4');main(p.parse_args().ref)
+    p=argparse.ArgumentParser();p.add_argument('--ref',default='v0.3.0-ablation.4');p.add_argument('--full-only',action='store_true')
+    args=p.parse_args();main(args.ref,full_only=args.full_only)
