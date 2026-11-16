@@ -1,0 +1,27 @@
+{
+  "method": "apc_vis",
+  "mode": "full",
+  "study": "02_orientanything_v2",
+  "trace_input": null,
+  "model_input": null,
+  "resume_input": null,
+  "output_dir": "/kaggle/working/apc_ablation_02_orientanything_v2",
+  "runtime_dir": "/kaggle/temp/apc_ablation_runtime/02_orientanything_v2",
+  "variants": [
+    "oa2"
+  ],
+  "sample_ids": null,
+  "weight_inputs": {
+    "sam3": null,
+    "oneref": null,
+    "oneref_tokenizer": null,
+    "oa2": null
+  },
+  "sam3_threshold": 0.5,
+  "oneref_min_iou": 0.0,
+  "seed": 42,
+  "sample_timeout_seconds": 900,
+  "phase_timeout_seconds": 21600,
+  "disk_min_free_gib": 3.0,
+  "retry_errors": false
+}

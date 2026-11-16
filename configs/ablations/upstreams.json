@@ -1,0 +1,38 @@
+{
+  "sam3": {
+    "repo": "facebookresearch/sam3",
+    "sha": "eef6839bcfc3458dd52ea80535dc6bd62aea86b1",
+    "model_repo": "facebook/sam3",
+    "model_sha": "3c879f39826c281e95690f02c7821c4de09afae7",
+    "filename": "sam3.pt"
+  },
+  "oa2": {
+    "repo": "SpatialVision/Orient-Anything-V2",
+    "sha": "73b11c9dc83e84daeb563d0c766831f2c66b0a18",
+    "model_repo": "Viglong/OriAnyV2_ckpt",
+    "model_sha": "34fe2ecbdb987a0fb98437af00600f22a0fdfb99",
+    "filename": "demo_ckpts/rotmod_realrotaug_best.pt"
+  },
+  "oneref": {
+    "repo": "linhuixiao/OneRef",
+    "sha": "882ed1b46afcd3998960c1b1eeb46de00e9263c8",
+    "model_repo": "linhuixiao/OneRef",
+    "model_sha": "36424493c9d0b99904b4f029e71eba62c19b7e93",
+    "filename": "rec_mixup_grounding_pretraining_base.zip"
+  },
+  "dinov2": {
+    "model_repo": "facebook/dinov2-large",
+    "model_sha": "47b73eefe95e8d44ec3623f8890bd894b6ea2d6c",
+    "filename": null
+  },
+  "oa1": {
+    "model_repo": "Viglong/Orient-Anything",
+    "model_sha": "ecfa089828d9fab521d47133bedbdbfdef151cd4",
+    "filename": "croplargeEX2/dino_weight.pt"
+  },
+  "sam1": {
+    "model_repo": "HCMUE-Research/SAM-vit-h",
+    "model_sha": "c9367b194bfe0113baa1e11b2dde6a801fbfe012",
+    "filename": "sam_vit_h_4b8939.pth"
+  }
+}

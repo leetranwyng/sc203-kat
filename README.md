@@ -63,3 +63,7 @@ CLI in ra đường dẫn prediction chuẩn hóa để dùng cho `evaluate` và
 ## Git và nguồn gốc
 
 Repo chính: [leetranwyng/sc203-kat](https://github.com/leetranwyng/sc203-kat) (public). Năm submodule trỏ các fork của `leetranwyng`, khóa commit; remote `upstream` của từng submodule giữ nguồn tác giả. Xem [quản lý upstream/fork](docs/upstreams.md) và [lộ trình refactor](docs/migration.md). Giữ nguyên license/attribution trong source tác giả; xem `THIRD_PARTY_NOTICES.md`.
+
+## APC perception ablations
+
+Three notebooks in [notebooks/apc_ablation](notebooks/apc_ablation) run SAM 3, OneRef and Orient Anything V2 on the saved 120-trace diagnostic cohort. Run sanity first, then notebook 01 (SAM 3 + OneRef) and notebook 02 (OA2). Historical APC predictions are imported; baseline inference is never repeated. See [the setup, protocol and output guide](docs/apc_ablation.md). This experimental adapter release still requires a Kaggle T4 sanity run.
