@@ -56,6 +56,9 @@ def run(method, config=None, root=None):
     plan = describe(method, config, root)
     if platform.system() != "Linux":
         raise RuntimeError("GPU inference profiles target Kaggle Linux. Use --dry-run on this computer.")
+    from ..runtime.kaggle import ensure_submodule, source_metadata
+    ensure_submodule(_root(root), plan["method"])
+    source = source_metadata(_root(root), plan["method"])
     profile = Path(plan["profile_dir"])
     options = dict(config.get("method_options") or {})
     namespace = dict(__name__="__sc203_profile__", PROFILE_DIR=profile,
@@ -77,7 +80,8 @@ def run(method, config=None, root=None):
     if identity_path.exists() and json.loads(identity_path.read_text(encoding="utf8")) != identity:
         raise RuntimeError("This output directory belongs to a different profile/configuration. Choose a new output directory.")
     identity_path.write_text(json.dumps(identity, indent=2), encoding="utf8")
-    run_state = {"plan":plan, "started":time.time(), "stages":[]}
+    (out / "source_checkout.json").write_text(json.dumps(source, indent=2), encoding="utf8")
+    run_state = {"plan":plan, "source":source, "started":time.time(), "stages":[]}
     state_path = out / "sc203_run.json"
     try:
         for name in plan["stages"]:

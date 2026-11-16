@@ -3,7 +3,7 @@ from pathlib import Path
 CONFIG=Path(sys.argv[1]); CFG=json.loads(CONFIG.read_text()); OUT=Path(CFG['output']); WORK=Path(CFG['work']); MODEL_INPUT=CFG['asset_input']
 from huggingface_hub import HfApi,snapshot_download
 old=OUT/'manifest.json'
-rev=json.loads(old.read_text())['identity']['model_sha'] if old.exists() else 'main'
+rev=json.loads(old.read_text())['identity']['model_sha'] if old.exists() else CFG['model_revision']
 if MODEL_INPUT:
     model=Path(MODEL_INPUT)
     h=hashlib.sha256()

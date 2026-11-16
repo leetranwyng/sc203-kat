@@ -15,19 +15,25 @@ python -m unittest discover -s tests -v
 
 `--dry-run` kiểm tra cấu hình và source, không tải model hoặc yêu cầu GPU. Chạy inference thực tế dùng Kaggle Linux và môi trường của từng phương pháp.
 
-## Đưa lên Kaggle ngay, chưa cần GitHub
+## Chạy trên Kaggle từ GitHub public
+
+1. Import notebook trong `notebooks/<method>/sanity.ipynb` vào Kaggle.
+2. Bật **Internet**, chọn **GPU T4 ×2**, rồi Run All.
+3. Notebook đã đặt `REPO_URL = 'https://github.com/leetranwyng/sc203-kat.git'` và `CODE_REF = 'v0.2.0'`. Source được clone tự động; chỉ submodule của phương pháp đang chạy được khởi tạo tại commit đã khóa.
+4. Có thể gắn weights, dataset và checkpoint cũ qua Input, rồi đặt `model_input`, `dataset_input`, `resume_input`. Secret `HF_token` là tùy chọn cho Hugging Face; GitHub public không cần token.
+5. Khi sanity đạt yêu cầu, dùng notebook `full.ipynb` cùng phương pháp.
+
+Code/cache ở `/kaggle/temp`; kết quả và `source_checkout.json` ở `output_dir` dưới `/kaggle/working`. Metadata ghi commit của repo chính và submodule. Thư mục source có sửa đổi sẽ bị từ chối để tránh ghi đè code; có thể chọn cache mới qua biến môi trường `SC203_CODE_CACHE`.
+
+Để thử code mới, đổi `CODE_REF` thành nhánh hoặc full commit đã push lên GitHub. Notebook fetch ref đó ở mỗi lần bootstrap; `main` không bị dùng lại từ local branch cũ. Dùng tag/commit cố định cho thí nghiệm cần tái lập và đổi output khi thay profile.
+
+Tạo lại notebook từ cấu hình JSON hiện tại:
 
 ```powershell
-python scripts/package_kaggle.py --method apc_vis --output dist/sc203-kat-apc-vis.zip
+python scripts/build_notebooks.py --ref v0.2.0
 ```
 
-1. Upload gói code ZIP lên một Kaggle Dataset, gắn làm Input. Nếu Kaggle giải nén ZIP, dùng đường dẫn thư mục đã giải nén.
-2. Import `notebooks/apc_vis/sanity.ipynb`, chọn GPU T4 ×2 và bật Internet để cài thư viện/tải checkpoint chưa gắn sẵn.
-3. Trong cell đầu, đặt `KAT_INPUT` trỏ tới gói code hoặc thư mục Input; điền `model_input`, `dataset_input`, `resume_input` nếu đã có các asset đó. Đọc [hướng dẫn cấu hình](docs/kaggle.md) cho đường dẫn asset riêng của APC/SymPL.
-4. Có thể thêm Secret `HF_token` hoặc đổi `HF_SECRET_NAME` trong cell cấu hình. Token chỉ được truyền qua môi trường, không lưu vào config/kết quả.
-5. Chạy sanity trước, sau đó dùng `full.ipynb`. Cả hai dùng cùng source profile. Bản refactor đã kiểm tra CPU; cần xác nhận sanity GPU sau khi di chuyển code.
-
-Notebook cũng hỗ trợ `REPO_URL` và `CODE_REF` (release/commit cụ thể). Không dùng code trôi theo `main` cho kết quả cần tái lập. Repo chính hiện private: trên Kaggle nên dùng gói code Input; chế độ clone cần đăng nhập GitHub có quyền đọc repo.
+Generator giữ nguyên `configs/experiments/`; thay đổi tham số ngay trên Kaggle bằng cell `RUN_CONFIG`.
 
 ## Cấu trúc
 
@@ -56,4 +62,4 @@ CLI in ra đường dẫn prediction chuẩn hóa để dùng cho `evaluate` và
 
 ## Git và nguồn gốc
 
-Repo chính: [leetranwyng/sc203-kat](https://github.com/leetranwyng/sc203-kat) (private). Năm submodule trỏ các fork của `leetranwyng`, khóa commit; remote `upstream` của từng submodule giữ nguồn tác giả. Xem [quản lý upstream/fork](docs/upstreams.md) và [lộ trình refactor](docs/migration.md). Giữ nguyên license/attribution trong source tác giả; xem `THIRD_PARTY_NOTICES.md`.
+Repo chính: [leetranwyng/sc203-kat](https://github.com/leetranwyng/sc203-kat) (public). Năm submodule trỏ các fork của `leetranwyng`, khóa commit; remote `upstream` của từng submodule giữ nguồn tác giả. Xem [quản lý upstream/fork](docs/upstreams.md) và [lộ trình refactor](docs/migration.md). Giữ nguyên license/attribution trong source tác giả; xem `THIRD_PARTY_NOTICES.md`.

@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-15",
-  "cpu_tests": 13,
+  "date": "2026-11-16",
+  "cpu_tests": 22,
   "thin_notebooks": 10,
   "configs": 10,
   "historical_regression": {
@@ -12,5 +12,8 @@
   "gpu_inference_after_refactor": "not_run",
   "remote_github_created": true,
   "github_owner": "leetranwyng",
-  "github_repository": "leetranwyng/sc203-kat"
+  "github_repository": "leetranwyng/sc203-kat",
+  "source_loading": "public GitHub clone only",
+  "repository_public": true,
+  "git_bootstrap_tests": 9
 }

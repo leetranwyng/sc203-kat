@@ -13,6 +13,9 @@ def main():
     assert len(notebooks)==10
     for path in notebooks:
         assert path.stat().st_size<25000, f"Notebook should be thin: {path}"
+        text=path.read_text(encoding="utf-8")
+        assert "KAT_INPUT" not in text and "zipfile" not in text, f"Obsolete code loading in {path}"
+        assert "https://github.com/leetranwyng/sc203-kat.git" in text
         for i,cell in enumerate(json.loads(path.read_text(encoding="utf-8"))["cells"]):
             if cell["cell_type"]=="code":
                 compile("".join(cell["source"]),f"{path}:cell{i}","exec")
