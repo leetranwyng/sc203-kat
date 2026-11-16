@@ -57,7 +57,7 @@ def setup_apc(cfg,root):
 
 def setup_extra(cfg,root,context):
     work=Path(cfg['runtime_dir']);uv=context['uv'];env=os.environ.copy()
-    for k in ('PYTHONHOME','PYTHONPATH','VIRTUAL_ENV'):env.pop(k,None)
+    for k in ('PYTHONHOME','PYTHONPATH','VIRTUAL_ENV','UV_SYSTEM_PYTHON'):env.pop(k,None)
     env.update(UV_PYTHON_INSTALL_DIR=str(work/'python_runtimes'),UV_CACHE_DIR=str(work/'uv_cache'),
                UV_NO_PROGRESS='1',UV_LINK_MODE='copy',PYTHONNOUSERSITE='1')
     repos={};pythons={}
@@ -95,5 +95,7 @@ def setup_extra(cfg,root,context):
         freeze=subprocess.check_output([uv,'pip','freeze','--python',py],env=env,text=True)
         target=Path(cfg['output_dir'])/'environments';target.mkdir(exist_ok=True)
         (target/f'{kind}.txt').write_text(freeze,encoding='utf8')
+        if kind=='oneref':
+            subprocess.run([py,'-c','import pkg_resources; from torchmetrics import Metric; from models.OneRef_model import beit3_base_patch16_384_grounding; print("OneRef imports OK")'],env=env,cwd=repo,check=True)
         repos[kind]=str(repo);pythons[kind]=py
     return repos,pythons

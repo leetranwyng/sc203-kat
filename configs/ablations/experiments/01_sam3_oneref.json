@@ -5,7 +5,7 @@
   "trace_input": null,
   "model_input": null,
   "resume_input": null,
-  "output_dir": "/kaggle/working/apc_ablation_01_sam3_oneref",
+  "output_dir": "/kaggle/working/apc_ablation_01_sam3_oneref_v3",
   "runtime_dir": "/kaggle/temp/apc_ablation_runtime/01_sam3_oneref",
   "variants": [
     "sam3",

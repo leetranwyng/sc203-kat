@@ -6,11 +6,11 @@ from pathlib import Path
 from build_notebooks import BOOTSTRAP,cell,REPO_URL
 ROOT=Path(__file__).resolve().parents[1]
 
-def main(ref='v0.3.0-ablation.2'):
+def main(ref='v0.3.0-ablation.3'):
     for study, variants in [('sanity',['sam3','oneref','oa2']),('01_sam3_oneref',['sam3','oneref']),('02_orientanything_v2',['oa2'])]:
         mode='sanity' if study=='sanity' else 'full'
         config=dict(method='apc_vis',mode=mode,study=study,trace_input=None,model_input=None,resume_input=None,
-            output_dir=f'/kaggle/working/apc_ablation_{study}',runtime_dir=f'/kaggle/temp/apc_ablation_runtime/{study}',
+            output_dir=f'/kaggle/working/apc_ablation_{study}_v3',runtime_dir=f'/kaggle/temp/apc_ablation_runtime/{study}',
             variants=variants,sample_ids=['5832'] if mode=='sanity' else None,
             weight_inputs=dict(sam3=None,oneref=None,oneref_tokenizer=None,oa2=None),
             sam3_threshold=.5,oneref_min_iou=0.0,seed=42,sample_timeout_seconds=900,
@@ -37,7 +37,7 @@ recover an instance missing from those proposals. No hidden fallback to object 0
 Runtime environments/weights stay in `/kaggle/temp`; evidence stays in `/kaggle/working`.
 Optional `weight_inputs` avoid auxiliary downloads. `model_input` is the existing APC
 asset bundle, not just Qwen weights. To resume, add the previous Output as Input and set
-`resume_input` to its `apc_ablation_MODE` folder. Only identical code/config/cohort resume.
+`resume_input` to its `apc_ablation_MODE_v3` folder. Only identical code/config/cohort resume.
 '''.replace('MODE',study)
         text=f"REPO_URL = {REPO_URL!r}\nCODE_REF = {ref!r}\nHF_SECRET_NAME = 'HF_token'\nRUN_CONFIG = "+pprint.pformat(config,sort_dicts=False,width=100)+'\n'
         run="""# This orchestration process does not load ML models in the notebook kernel.
@@ -75,4 +75,4 @@ if EXPORT_RESULT_ZIP:
         conf=ROOT/'configs/ablations/experiments'/f'{study}.json';conf.parent.mkdir(parents=True,exist_ok=True);conf.write_text(json.dumps(config,indent=2)+'\n',encoding='utf8')
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--ref',default='v0.3.0-ablation.2');main(p.parse_args().ref)
+    p=argparse.ArgumentParser();p.add_argument('--ref',default='v0.3.0-ablation.3');main(p.parse_args().ref)

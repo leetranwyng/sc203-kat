@@ -5,7 +5,7 @@
   "trace_input": null,
   "model_input": null,
   "resume_input": null,
-  "output_dir": "/kaggle/working/apc_ablation_sanity",
+  "output_dir": "/kaggle/working/apc_ablation_sanity_v3",
   "runtime_dir": "/kaggle/temp/apc_ablation_runtime/sanity",
   "variants": [
     "sam3",

@@ -52,6 +52,7 @@
     ],
     "index": "https://download.pytorch.org/whl/cu118",
     "packages": [
+      "setuptools==75.8.0",
       "numpy==1.26.4",
       "Pillow==11.3.0",
       "timm==0.6.13",

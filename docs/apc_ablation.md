@@ -2,7 +2,7 @@
 
 Use `notebooks/apc_ablation/sanity.ipynb` first, then run the two full notebooks:
 `01_sam3_oneref.ipynb` (SAM 3 and OneRef), and `02_orientanything_v2.ipynb` (OA2), on Kaggle
-T4 ×2 with Internet. All three clone public sc203-kat at `v0.3.0-ablation.2`.
+T4 ×2 with Internet. All three clone public sc203-kat at `v0.3.0-ablation.3`.
 The implementation has CPU/static tests; GPU feasibility and numerical behavior
 of the new adapters must be checked with the sanity notebook. No claim of a
 successful Kaggle GPU run is made by the source release.
@@ -168,4 +168,22 @@ python scripts/package_apc_trace_input.py --repair-zip OLD.zip --output FIXED.zi
 ```
 
 Upload the corrected ZIP as the trace Dataset and import the three notebooks
-from release `v0.3.0-ablation.2`. Existing schema-1 inputs remain readable.
+from release `v0.3.0-ablation.3`. Existing schema-1 inputs remain readable.
+
+
+## OneRef `pkg_resources` import failure
+
+The v0.3.0-ablation.2 Kaggle run installed setuptools 84.2.1, while
+`torchmetrics==0.11.4` still imports `pkg_resources`. Setuptools 82 removed that
+module. OneRef now explicitly pins `setuptools==75.8.0`, and its actual model
+entry point is imported after installation, before model inference begins.
+
+If the original Kaggle session is still active, the standalone recovery helper
+`scripts/recover_apc_oneref.py` installs only this packaging dependency, retries
+OneRef perception and failed OneRef geometry/answers, then rebuilds the full
+report with the saved SAM 3/OA2 results. It uses the old source/identity and saves
+the environment repair under `runtime_audit/`; native setup and model downloads
+are skipped. The original run configuration is preserved. A closed Kaggle session
+needs the new sanity notebook because its temporary environments are gone.
+
+[Setuptools removal notes](https://setuptools.pypa.io/en/latest/history.html#v82-0-0).
