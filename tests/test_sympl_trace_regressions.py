@@ -73,7 +73,9 @@ class Regressions(unittest.TestCase):
 
     def test_notebooks_are_launchers_and_outputs_cleared(self):
         import ast
-        for p in (ROOT/'notebooks/sympl_trace').glob('*.ipynb'):
+        paths=list((ROOT/'notebooks/sympl').glob('SymPL_7B_APC120_*_kaggle.ipynb'))
+        self.assertEqual(len(paths),3)
+        for p in paths:
             self.assertLess(p.stat().st_size,12000)
             nb=json.loads(p.read_text(encoding='utf8'))
             for c in nb['cells']:

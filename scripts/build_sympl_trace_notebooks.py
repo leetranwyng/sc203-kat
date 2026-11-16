@@ -14,7 +14,10 @@ def cell(source,markdown=False):
 def build(ref):
     base=json.loads((ROOT/'notebooks/sympl/sanity.ipynb').read_text(encoding='utf8'))
     bootstrap=''.join(base['cells'][2]['source'])
-    folder=ROOT/'notebooks/sympl_trace';folder.mkdir(exist_ok=True)
+    folder=ROOT/'notebooks/sympl';folder.mkdir(exist_ok=True)
+    filenames = {'sanity':'SymPL_7B_APC120_sanity_kaggle.ipynb',
+                 'full':'SymPL_7B_APC120_stage_traces_kaggle.ipynb',
+                 'recover':'SymPL_7B_APC120_recover_kaggle.ipynb'}
     for mode in ('sanity','full','recover'):
         cfg=dict(method='sympl',mode='sanity' if mode=='recover' else mode,trace_input=None,model_input=None,
             resume_input=None,run_smoke_first=True,
@@ -36,7 +39,7 @@ def build(ref):
         display="from IPython.display import display, FileLink\noutput = Path("+('OLD_OUTPUT' if mode=='recover' else "RUN_CONFIG['output_dir']")+")\nfor p in sorted(output.rglob('sanity_report.json')): print(p, p.read_text())\nfor p in sorted(output.parent.joinpath(output.name+'_downloads').glob('*.zip')): display(FileLink(str(p)))\n"
         nb=dict(nbformat=4,nbformat_minor=5,metadata=base['metadata'],cells=[cell(header,True),cell(settings),cell(boot),cell(command),cell(display)])
         for i,c in enumerate(nb['cells']):c['id']=f'trace-{mode}-{i}'
-        (folder/f'{mode}.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf8')
+        (folder/filenames[mode]).write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf8')
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--ref',default='fix/sympl-trace120')

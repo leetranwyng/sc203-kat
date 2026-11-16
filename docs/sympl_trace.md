@@ -1,6 +1,7 @@
 # SymPL trace120
 
-Use `notebooks/sympl_trace/sanity.ipynb`, then `full.ipynb` with the same configuration.
+Use `notebooks/sympl/SymPL_7B_APC120_sanity_kaggle.ipynb`, then
+`notebooks/sympl/SymPL_7B_APC120_stage_traces_kaggle.ipynb` with the same configuration.
 Mount the existing APC trace120 dataset. `trace_input=None` discovers either the
 extracted bundle or its ZIP. Six sanity cases cover two cases per task; full uses
 all 120 pinned cases. Only the input images and historical APC results are shared;
@@ -48,7 +49,7 @@ a failed smoke gate. Accuracy is not a technical health gate.
 
 ## Recover an old run without inference
 
-Run `notebooks/sympl_trace/recover.ipynb` in a session with the old output and
+Run `notebooks/sympl/SymPL_7B_APC120_recover_kaggle.ipynb` in a session with the old output and
 runtime available. Set `OLD_OUTPUT` to the old directory. It prints saved
 per-sample errors and rebuilds the gallery, without model loading or GPU setup.
 If the runtime has disappeared, original per-sample errors and the archived
