@@ -9,8 +9,17 @@ from sc203_kat.methods import describe
 def main():
     sources = [p for name in ("src","profiles","scripts") for p in (ROOT/name).rglob("*.py")]
     for path in sources: compile(path.read_text(encoding="utf-8-sig"),str(path),"exec")
-    notebooks = sorted((ROOT/"notebooks").rglob("*.ipynb"))
-    assert len(notebooks)==13
+    expected_reclip = {
+        f'{method}_reclip_{mode}.ipynb'
+        for method in ('apc_vis', 'sympl') for mode in ('sanity', 'full')
+    }
+    assert {p.name for p in (ROOT/'notebooks/reclip').glob('*.ipynb')} == expected_reclip
+    notebooks = [
+        *(ROOT/'notebooks'/method/f'{mode}.ipynb'
+          for method in ('apc_vis','pcd','sympl','vst','spatial_ssrl') for mode in ('sanity','full')),
+        *(ROOT/'notebooks/apc_ablation'/name for name in ('sanity.ipynb','01_sam3_oneref.ipynb','02_orientanything_v2.ipynb')),
+        *(ROOT/'notebooks/reclip'/name for name in sorted(expected_reclip)),
+    ]
     expected_ablation={'sanity.ipynb','01_sam3_oneref.ipynb','02_orientanything_v2.ipynb'}
     assert {p.name for p in (ROOT/'notebooks/apc_ablation').glob('*.ipynb')}==expected_ablation
     for path in notebooks:
@@ -33,5 +42,5 @@ def main():
         for path in (ROOT/folder).rglob("*"):
             if path.is_file() and path.suffix in {".py",".json",".ipynb"}:
                 assert not re.search(r"(?:hf_[A-Za-z0-9]{25,}|ghp_[A-Za-z0-9]{30,})",path.read_text(encoding="utf-8-sig")),f"Potential credential in {path}"
-    print(f"PASS: {len(sources)} Python files, thirteen thin notebooks, ten baseline configs plus three ablation configs, no credential literals")
+    print(f"PASS: {len(sources)} Python files, seventeen thin notebooks, ten baseline configs plus three ablation configs, no credential literals")
 if __name__=="__main__": main()
